@@ -1,0 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    overflow: clip;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}

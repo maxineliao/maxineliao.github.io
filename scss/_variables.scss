@@ -1,0 +1,46 @@
+// color
+$primary: #69D6E2;
+$secondary: #AC7DD2;
+
+$grey-100: #EEEEEE;
+
+$dark-800: #393E46;
+$dark-900: #303337;
+
+$white: #fff;
+$black: #000;
+
+// color gradient
+@mixin bg-pri-dark(){
+    background: rgb(48,51,55);
+    background: -webkit-linear-gradient(0deg, $dark-900 0%, $primary 100%);
+    background: linear-gradient(0deg, $dark-900 0%, $primary 100%);
+    }
+
+@mixin bg-sec-dark(){
+    background: rgb(48,51,55);
+    background: -webkit-linear-gradient(0deg, $dark-900 0%, $secondary 100%);
+    background: linear-gradient(0deg, $dark-900 0%, $secondary 100%);
+    }
+
+// spacing
+$margin: 8px;
+$padding: 8px;
+
+// keyframe prefix
+@mixin keyframes($animationName)
+{
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName}  {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+

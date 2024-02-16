@@ -1,0 +1,25 @@
+
+html, body {
+    background: $dark-900;
+    color: $grey-100;
+    text-align: center;
+}
+
+h1 span {
+    color: $primary;
+}
+
+h1 img {
+    width: 48px;
+    margin-left: $margin;
+    margin-bottom: $margin * -4;
+}
+
+.hero-header {
+    height: 100svh;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 6%;
+}

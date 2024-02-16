@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  overflow: clip;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+html, body {
+  font-family: "Nunito Sans", "Noto Sans TC", -apple-system, "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.translate-hover {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.translate-hover:hover {
+  transform: translate(3px, 3px);
+}
+
+.attract-hover-easing {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.intro {
+  z-index: 9999;
+  width: 100%;
+  height: 120svh;
+  text-align: center;
+  top: -10svh;
+  position: absolute;
+  border-radius: 50%/20px;
+  background: #EEEEEE;
+  transform: translate3d(0, 0, 0);
+  -webkit-animation-name: up;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: all 0.3s cubic-bezier(0.17, 0.67, 0.75, 0.4);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: up;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: all 0.3s cubic-bezier(0.17, 0.67, 0.75, 0.4);
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: up;
+  -o-animation-duration: 1s;
+  -o-animation-delay: 1.5s;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: all 0.3s cubic-bezier(0.17, 0.67, 0.75, 0.4);
+  -o-animation-fill-mode: forwards;
+  animation-name: up;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: all 0.3s cubic-bezier(0.17, 0.67, 0.75, 0.4);
+  animation-fill-mode: forwards;
+}
+
+.intro img {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+}
+
+@-webkit-keyframes up {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@-moz-keyframes up {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@-o-keyframes up {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes up {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 24px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul a {
+  opacity: 0.7;
+  transition: all ease 300ms;
+}
+
+nav ul a:hover {
+  opacity: 1;
+}
+
+nav a {
+  color: #EEEEEE;
+  padding: 0 16px;
+}
+
+nav img {
+  height: 28px;
+}
+
+html, body {
+  background: #303337;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+h1 span {
+  color: #69D6E2;
+}
+
+h1 img {
+  width: 48px;
+  margin-left: 8px;
+  margin-bottom: -32px;
+}
+
+.hero-header {
+  height: 100svh;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 6%;
+}/*# sourceMappingURL=main.css.map */
