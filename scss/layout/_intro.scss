@@ -4,7 +4,10 @@
     height: 120svh;
     text-align: center;
     top: -10svh;
-    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     border-radius: 50% / 20px;
     background: $grey-100;
     transform: translate3d(0, 0, 0);
