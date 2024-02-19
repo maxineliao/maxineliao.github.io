@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/attracthover.js"></script>
     <script src="js/all.js"></script>
 
     <title>Maxine Liao | Portfolio</title>
@@ -18,10 +19,10 @@
 </head>
 <body>
     <nav>
-        <div class="logo js-attract-hover translate-hover"><a href="index.html"><img src="images/logo-bright.svg" alt="Maxine's LOGO"></a></div>
+        <div class="logo translate-hover"><a class="magnetic-element" href="index.html"><img src="images/logo-bright.svg" alt="Maxine's LOGO"></a></div>
         <ul>
-            <li class="js-attract-hover translate-hover"><a href="#">關於我</a></li>
-            <li class="js-attract-hover translate-hover"><a href="#">作品集</a></li>
+            <li><a class="magnetic-element translate-hover" href="#">關於我</a></li>
+            <li><a class="magnetic-element translate-hover" href="#">作品集</a></li>
         </ul>
     </nav>
    
@@ -31,15 +32,30 @@
 
     <main>
         <div class="container">
-            <div class="section hero-header">
+            <div class="hero-header">
                 <h1>為產品及團隊</h1><h1>碰撞出新的<span>火花</span><img src="images/star-primary.svg" alt="star"></h1>
                 <h5>Web Design | UI Design | Motion Graphics | Video Edit | Flat Design | Front-end Develop</h5>
             </div>
         </div>
+        <div class="scroll-motion-1">
+            <img class="spark left" src="images/spark.svg" alt="">
+            <img class="lightning" src="images/lightning.svg" alt="">
+            <img class="spark right" src="images/spark.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="block block1">
+                <p>假字假字我的專長是 UI 設計、影片剪輯、平面設計與 Motion Graphics，曾任新加坡商艾高科技的行銷部網頁設計師，負責公司產品的網頁設計及支援行銷貼文製圖以及影片製作。工作上亦會支援 R&D 部門的 UX/UI 討論以及進行產品 QA，對於開發流程有基礎的認識，並具有基礎 HTML/CSS 能力。往後也打算持續進修 JS、Vue 等相關技能，增加溝通流暢度並提升自身軟實力。<br><br>除此之外，至今做過許多接案剪輯及動畫工作，我認為對多種設計與影音軟體的流暢使用，以及優秀的英文能力皆是我應用在 UX/UI 設計領域的優假字假字假字假字</p>
+                <div>
+                    <a href="#" class="btn-sec magnetic-element translate-hover">瞭解更多🙌🏻</a>
+                </div>
+            </div>
+        </div>
+        
     </main>
     
-
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/magnetic-hover.js"></script>
+    
 </body>
 
 </html>

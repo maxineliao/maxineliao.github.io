@@ -5,6 +5,8 @@ html, body {
     text-align: center;
 }
 
+// hero-header
+
 h1 span {
     color: $primary;
 }
@@ -22,4 +24,28 @@ h1 img {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 6%;
+}
+
+// scroll motion 1
+
+.lightning {
+    height: 56px;
+    position: relative;
+    transform: translateY(-200px);
+}
+
+.spark {
+    width: 18px;
+}
+
+.spark.left {
+    transform: scaleX(-1);
+}
+
+// block 1
+
+.block1 p{
+    display: inline-block;
+    max-width: 720px;
+    text-align: justify;
 }

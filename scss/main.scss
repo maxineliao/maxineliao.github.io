@@ -7,7 +7,9 @@
 @import 'variables';
 
 // components
-@import 'button';
+@import 'components/block';
+@import 'components/button';
+@import 'components/cursorbubble';
 
 // layout
 @import 'layout/intro';

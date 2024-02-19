@@ -60,7 +60,6 @@ a {
 
 *, *::before, *::after {
   box-sizing: border-box;
-  overflow: clip;
 }
 
 .container {
@@ -96,10 +95,15 @@ h5 {
 
 p {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 body {
   line-height: 1.5;
+}
+
+.block {
+  padding: 80px 0;
 }
 
 .translate-hover {
@@ -110,8 +114,36 @@ body {
   transform: translate(3px, 3px);
 }
 
-.attract-hover-easing {
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.btn-sec {
+  display: inline-block;
+  background: rgb(48, 51, 55);
+  background: -webkit-linear-gradient(0deg, #303337 0%, #AC7DD2 100%);
+  background: linear-gradient(0deg, #303337 0%, #AC7DD2 100%);
+  color: #ffffff;
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50px;
+  margin: 32px 0;
+}
+
+.bubble {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.4);
+  transition: height 0.4s, width 0.4s, background-color 0.4s, all 0.2s;
+  z-index: 9999;
+}
+
+.bubble--big {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: height 0.4s, width 0.4s, background-color 0.4s;
 }
 
 .intro {
@@ -199,27 +231,25 @@ nav {
   height: 80px;
   padding: 0 24px;
 }
-
-nav ul {
-  display: flex;
-}
-
-nav ul a {
-  opacity: 0.7;
-  transition: all ease 300ms;
-}
-
-nav ul a:hover {
-  opacity: 1;
-}
-
 nav a {
+  display: inline-block;
+  position: relative;
   color: #EEEEEE;
   padding: 0 16px;
 }
-
 nav img {
   height: 28px;
+}
+nav ul {
+  display: flex;
+}
+nav ul a {
+  display: inline-block;
+  opacity: 0.7;
+  transition: all ease 300ms;
+}
+nav ul a:hover {
+  opacity: 1;
 }
 
 html, body {
@@ -245,4 +275,24 @@ h1 img {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 6%;
+}
+
+.lightning {
+  height: 56px;
+  position: relative;
+  transform: translateY(-200px);
+}
+
+.spark {
+  width: 18px;
+}
+
+.spark.left {
+  transform: scaleX(-1);
+}
+
+.block1 p {
+  display: inline-block;
+  max-width: 720px;
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */
