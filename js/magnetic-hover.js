@@ -51,7 +51,7 @@ class HoverButton {
             x: (x - this.x) * 0.2,
             y: (y - this.y) * 0.2,
             // scale: 1.15,
-            ease: 'none',
+            ease: 'power1.out',
             duration: 0.4
         });
 
@@ -80,7 +80,7 @@ new HoverButton(btn2);
 const btn3 = document.querySelector('nav ul li:nth-child(2) a');
 new HoverButton(btn3);
 
-const btn4 = document.querySelector('.block1 div a');
+const btn4 = document.querySelector('.block1 div .magnetic-element');
 new HoverButton(btn4);
 
 // Hover effect end 

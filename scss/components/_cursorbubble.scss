@@ -1,18 +1,27 @@
-.bubble {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.4);
-    transition: height 0.4s, width 0.4s, background-color 0.4s, all 0.2s;
-    z-index: 9999;
-  }
-  
-  .bubble--big {
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.03);
-    transition: height 0.4s, width 0.4s, background-color 0.4s;
-  }
+@media (hover: hover) and (pointer: fine) {
+	#cursor {
+		z-index: 99;
+		position: fixed;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+		will-change: transform;
+
+		.cursor--inner {
+			width: 5vw;
+			height: 5vw;
+			border-radius: 50%;
+			transform: translate(-50%, -50%);
+			border: solid 1px #eeeeee70;
+			transition: all 700ms ease;
+		}
+		.cursor--mouseover {
+			width: 2vw;
+			height: 2vw;
+			border-radius: 50%;
+			transform: translate(-50%, -50%);
+			background: #eeeeee60;
+			border: solid 1px #eeeeee70;
+		}
+	}
+}
