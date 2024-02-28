@@ -80,7 +80,10 @@ new HoverButton(btn2);
 const btn3 = document.querySelector('nav ul li:nth-child(2) a');
 new HoverButton(btn3);
 
-const btn4 = document.querySelector('.block1 div .magnetic-element');
-new HoverButton(btn4);
+// const btn4 = document.querySelector('.block1 .magnetic-element')
+// new HoverButton(btn4);
+
+// const btn5 = document.querySelector('.block2 .magnetic-element');
+// new HoverButton(btn5);
 
 // Hover effect end 

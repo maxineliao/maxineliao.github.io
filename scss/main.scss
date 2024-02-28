@@ -1,10 +1,10 @@
+//utils
+@import 'variables';
+
 // base
 @import 'base/reset';
 @import 'base/base';
 @import 'base/textDefault';
-
-//utils
-@import 'variables';
 
 // components
 @import 'components/block';
@@ -14,7 +14,9 @@
 // layout
 @import 'layout/intro';
 @import 'layout/nav';
+@import 'layout/contact';
 @import 'layout/footer';
 
 // pages
-@import 'index';
+@import 'pages/index';
+@import 'pages/about';

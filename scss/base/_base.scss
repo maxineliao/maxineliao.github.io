@@ -7,3 +7,10 @@
     max-width: 1180px;
     margin: 0 auto;
 }
+
+html, body {
+    background: $dark-900;
+    color: $grey-100;
+    text-align: center;
+    overflow-x: clip;
+}

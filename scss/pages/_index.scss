@@ -1,0 +1,125 @@
+
+// hero-header
+.index h1 {
+    span {
+        color: $primary;
+    }
+    img {
+        width: 48px;
+        margin-left: $margin;
+        margin-bottom: $margin * -4;
+    }
+}
+
+.index .hero-header {
+    height: 100svh;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 6%;
+}
+
+// scroll motion 1
+.lightning {
+    height: 56px;
+    position: relative;
+    transform: translateY(-20svh);
+}
+
+.spark {
+    width: 18px;
+}
+
+.spark.left {
+    transform: scaleX(-1);
+}
+
+// block 1
+.index .block1 p{
+    display: inline-block;
+    max-width: 720px;
+    text-align: justify;
+}
+
+// block 2
+.index .block2 {
+    .content-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        margin-bottom: $margin*6;
+        .box-img {
+            width: 420px;
+            height: 300px;
+            border-radius: 20px;
+            overflow: clip;
+            img {
+                height: 100%;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .box-text {
+            text-align: left;
+            width: 40%;
+        }
+        .box-btn {
+            position: absolute;
+            bottom: -40px;
+            left: 480px;
+            a {
+                position: relative;
+                display: block;
+                width: 120px;
+                height: fit-content;
+            }
+            img {
+                width: 100%;
+            }
+            p {
+                display: inline-block;
+                width: 100%;
+                position: absolute;
+                color: $grey-100;
+                @include center;
+            }
+        }
+    }
+    .btn {
+        margin-top: $margin*10;
+        position: relative;
+        a {
+            position: relative;
+            z-index: 10;
+        }
+        .decor {
+            z-index: 0;
+            display: block;
+            width: 110vw;
+            color: $dark-800;
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 600;
+            position:absolute;
+            top:50%;
+            left:50%;
+            -webkit-transform: translate(-50%, -50%) rotate(-5deg);
+            -ms-transform: translate(-50%, -50%) rotate(-5deg);
+            transform: translate(-50%, -50%) rotate(-5deg);
+        }
+    }
+}
+
+.index .tag {
+    margin-bottom: $margin*2;
+    p{
+        display: inline-block;
+        padding: $padding*0.5 $padding;
+        background: $grey-200;
+        border-radius: 6px;
+        margin-right: $margin*0.5;
+    }
+}

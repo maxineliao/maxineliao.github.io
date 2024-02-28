@@ -1,8 +1,10 @@
 // color
 $primary: #69D6E2;
 $secondary: #AC7DD2;
+$secondary-0: #AC7DD200;
 
 $grey-100: #EEEEEE;
+$grey-200: #D9D9D920;
 
 $dark-800: #393E46;
 $dark-900: #303337;
@@ -19,8 +21,8 @@ $black: #000;
 
 @mixin bg-sec-dark(){
     background: rgb(48,51,55);
-    background: -webkit-linear-gradient(0deg, $dark-900 0%, $secondary 100%);
-    background: linear-gradient(0deg, $dark-900 0%, $secondary 100%);
+    background: -webkit-linear-gradient(0deg, $secondary-0 0%, $secondary 100%);
+    background: linear-gradient(0deg, $secondary-0 0%, $secondary 100%);
     }
 
 // spacing
@@ -44,3 +46,13 @@ $padding: 8px;
     }
 }
 
+//Position Center
+
+@mixin center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+ }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,11 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="js/ScrollMagic.js"></script>
     <script src="js/jquery-3.7.1.js"></script>
     
 
-    <title>Maxine Liao | Portfolio</title>
-
-
-    
+    <title>Maxine Liao | Portfolio</title>    
 </head>
 <body>
     <div id="cursor">
@@ -23,9 +21,9 @@
     </div>
 
     <nav>
-        <div class="logo translate-hover" data-cursor="pointer"><a class="magnetic-element" href="index.html"><img src="images/logo-bright.svg" alt="Maxine's LOGO"></a></div>
+        <div class="logo translate-hover" data-cursor="pointer"><a class="magnetic-element gravityButton" href="index.html"><img src="images/logo-bright.svg" alt="Maxine's LOGO"></a></div>
         <ul>
-            <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="#">關於我</a></li>
+            <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="about.html">關於我</a></li>
             <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="#">作品集</a></li>
         </ul>
     </nav>
@@ -34,8 +32,7 @@
         <img src="images/logo-dark.svg" alt="Maxine's LOGO">
     </div> -->
 
-    <main>
-
+    <main class="index">
         <section class="hero-header">
             <div class="container">
                 <h1>為產品及團隊</h1><h1>碰撞出新的<span>火花</span><img src="images/star-primary.svg" alt="star"></h1>
@@ -52,7 +49,7 @@
         <section class="block block1">
             <div class="container">
                 <p>假字假字我的專長是 UI 設計、影片剪輯、平面設計與 Motion Graphics，曾任新加坡商艾高科技的行銷部網頁設計師，負責公司產品的網頁設計及支援行銷貼文製圖以及影片製作。工作上亦會支援 R&D 部門的 UX/UI 討論以及進行產品 QA，對於開發流程有基礎的認識，並具有基礎 HTML/CSS 能力。往後也打算持續進修 JS、Vue 等相關技能，增加溝通流暢度並提升自身軟實力。<br><br>除此之外，至今做過許多接案剪輯及動畫工作，我認為對多種設計與影音軟體的流暢使用，以及優秀的英文能力皆是我應用在 UX/UI 設計領域的優假字假字假字假字</p>
-                <div>
+                <div class="btn">
                     <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover">瞭解更多🙌🏻</a>
                 </div>
             </div>
@@ -64,24 +61,65 @@
                     <h3>作品</h3>
                     <img src="images/pic-title.svg" alt="">
                 </div>
-                <div class="content">
-                    <div class="img-box">
+                <div class="content-box">
+                    <div class="box-img">
                         <img src="images/sample.jpg" alt="">
                     </div>
-                    <div>
+                    <div class="box-text">
                         <h4>假字假字假字</h4>
                         <div class="tag">
                             <p>Vue</p>
                             <p>Bootstrap</p>
                         </div>
-                        <p>定拉跟清背枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重。</p>
+                        <p>定拉跟清背枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重止唱雪重。</p>
                     </div>
+                    <div class="box-btn" data-cursor="pointer">
+                        <a href="#">
+                            <img src="images/pic-btn.svg" alt="">    
+                            <p>專案詳情</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="box-img">
+                        <img src="images/sample.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h4>假字假字假字</h4>
+                        <div class="tag">
+                            <p>Vue</p>
+                            <p>Bootstrap</p>
+                        </div>
+                        <p>定拉跟清背枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重止唱雪重。</p>
+                    </div>
+                    <div class="box-btn" data-cursor="pointer">
+                        <a href="#">
+                            <img src="images/pic-btn.svg" alt="">    
+                            <p>專案詳情</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover">查看完整作品集🔥</a>
+                    <p class="decor">Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・ Check it out</p>
                 </div>
             </div>
         </section>
-        
+        <section class="contact">
+            <div class="container">
+                <h2>如有任何工作／發案需求
+                    <br>歡迎與我聯繫</h2>
+                <img src="images/lightning.svg" alt="">
+                <a data-cursor="pointer" href="mailto:mxnliao@gmail.com">
+                    mxnliao@gmail.com
+                </a>
+            </div>
+        </section>
     </main>
-    
+    <footer>
+        <p>© Maxine Liao 2024</p>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="js/magnetic-hover.js"></script>
     <script src="js/all.js"></script>

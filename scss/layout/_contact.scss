@@ -1,0 +1,13 @@
+.contact {
+    padding-top: $padding*20;
+    padding-bottom: $padding*20;
+    img {
+        margin-top: $margin*3;
+    }
+    a {
+        color: $grey-100;
+        font-weight: 500;
+        font-size: 2.5em;
+        display: block;
+    }
+}
