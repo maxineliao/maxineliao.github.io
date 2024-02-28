@@ -107,6 +107,24 @@ body {
   padding: 80px 0;
 }
 
+.block-title.with-img {
+  position: relative;
+}
+
+.block-title.with-img h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block-title img {
+  width: 110vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .translate-hover {
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -267,6 +285,7 @@ html, body {
   background: #303337;
   color: #EEEEEE;
   text-align: center;
+  overflow-x: clip;
 }
 
 h1 span {

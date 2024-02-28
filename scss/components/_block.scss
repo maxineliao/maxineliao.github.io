@@ -1,3 +1,21 @@
 .block {
     padding: 80px 0;
 }
+
+.block-title.with-img {
+    position: relative;
+}
+
+.block-title.with-img h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.block-title img {
+    width: 110vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

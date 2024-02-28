@@ -3,6 +3,7 @@ html, body {
     background: $dark-900;
     color: $grey-100;
     text-align: center;
+    overflow-x: clip;
 }
 
 // hero-header
@@ -49,3 +50,5 @@ h1 img {
     max-width: 720px;
     text-align: justify;
 }
+
+// block 2
