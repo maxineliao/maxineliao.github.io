@@ -39,3 +39,15 @@ document.querySelectorAll("[data-cursor]").forEach((item) => {
 		cursor.children[0].classList.remove("cursor--mouseover");
 	});
 });
+
+// Scroll Magic
+var controller1 = new ScrollMagic.Controller();
+
+var scene = new ScrollMagic.Scene({
+	triggerElement: '#lightning', // starting scene, when reaching this element
+	duration: 200 // pin the element for a total of 200px
+  })
+  gsap.fromTo()( "#lightning",{ y: 0 }, { y:200 });
+  
+  // Add Scene to ScrollMagic Controller
+//   controller1.addScene(scene);

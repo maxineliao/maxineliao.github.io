@@ -144,7 +144,11 @@ body {
   line-height: 48px;
   border-radius: 50px;
   margin: 32px 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-sec:hover {
+  transform: translateY(10px);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -312,7 +316,6 @@ footer {
   margin-left: 8px;
   margin-bottom: -32px;
 }
-
 .index .hero-header {
   height: 100svh;
   vertical-align: middle;
@@ -325,15 +328,18 @@ footer {
 .lightning {
   height: 56px;
   position: relative;
-  transform: translateY(-20svh);
+  transform: translateY(-15svh);
 }
 
 .spark {
   width: 18px;
+  opacity: 0;
 }
-
 .spark.left {
-  transform: scaleX(-1);
+  transform: scaleX(-1) translateX(-30px);
+}
+.spark.right {
+  transform: translateX(-30px);
 }
 
 .index .block1 p {
@@ -516,4 +522,57 @@ footer {
 
 .about .block3 {
   padding-top: 40px;
+}
+.about .block3 .content-box {
+  margin-top: 40px;
+  text-align: left;
+  position: relative;
+}
+.about .block3 .content-box .line-v {
+  display: block;
+  height: 1660px;
+  border-right: 1px solid rgba(238, 238, 238, 0.1254901961);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.about .block3 .content-box ul {
+  max-width: 420px;
+  margin: 0 auto;
+}
+.about .block3 .content-box ul li {
+  margin-bottom: 16px;
+  line-height: 1.8em;
+  position: relative;
+}
+.about .block3 .content-box ul li p:nth-child(3) {
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.1254901961);
+}
+.about .block3 .content-box ul li span {
+  display: inline-block;
+  background: #fff;
+  padding: 0 8px;
+  margin-right: 8px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+.about .block3 .content-box ul li:nth-child(odd) {
+  left: -54%;
+}
+.about .block3 .content-box ul li:nth-child(odd) span {
+  color: #AC7DD2;
+}
+.about .block3 .content-box ul li:nth-child(even) {
+  left: 54%;
+}
+.about .block3 .content-box ul li:nth-child(even) span {
+  color: #69D6E2;
+}
+.about .block3 .content-box .sub-title {
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

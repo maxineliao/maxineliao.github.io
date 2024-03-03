@@ -9,10 +9,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/ScrollMagic.js"></script>
-    <script src="js/jquery-3.7.1.js"></script>
-    
-
     <title>Maxine Liao | Portfolio</title>    
 </head>
 <body>
@@ -28,9 +24,9 @@
         </ul>
     </nav>
    
-    <!-- <div class="intro">
+    <div class="intro">
         <img src="images/logo-dark.svg" alt="Maxine's LOGO">
-    </div> -->
+    </div>
 
     <main class="index">
         <section class="hero-header">
@@ -41,14 +37,18 @@
         </section>
         
         <div class="scroll-motion-1">
-            <img class="spark left" src="images/spark.svg" alt="">
-            <img class="lightning" src="images/lightning.svg" alt="">
-            <img class="spark right" src="images/spark.svg" alt="">
+            <img id="spark-l" class="spark left" src="images/spark.svg" alt="">
+            <img id="lightning" class="lightning" src="images/lightning.svg" alt="">
+            <img id="spark-r" class="spark right" src="images/spark.svg" alt="">
         </div>
         
         <section class="block block1">
             <div class="container">
-                <p>假字假字我的專長是 UI 設計、影片剪輯、平面設計與 Motion Graphics，曾任新加坡商艾高科技的行銷部網頁設計師，負責公司產品的網頁設計及支援行銷貼文製圖以及影片製作。工作上亦會支援 R&D 部門的 UX/UI 討論以及進行產品 QA，對於開發流程有基礎的認識，並具有基礎 HTML/CSS 能力。往後也打算持續進修 JS、Vue 等相關技能，增加溝通流暢度並提升自身軟實力。<br><br>除此之外，至今做過許多接案剪輯及動畫工作，我認為對多種設計與影音軟體的流暢使用，以及優秀的英文能力皆是我應用在 UX/UI 設計領域的優假字假字假字假字</p>
+                <p>Hi！我是 Maxine，也可以叫我 Max。現任接案公司的數位設計師一職，主要業務為設計銀行活動網頁、eDM、切版，同時須直接與客戶溝通需求，判斷需求是否可行及提供最佳的解決方式。
+                    <br><br>
+                    我擅長網頁／UI設計、平面設計、Motion Graphics、影像剪輯、前端切版，亦接觸過 Vue.js 框架、了解 git 版本控制，你想得到的我不一定都會，但我一定學得會。多樣的技能組合讓我在學習新技術時能迅速融會貫通、思考問題時考量到不一樣的面向，為專案和團隊帶來想法上的碰撞。優秀的英語能力也讓我在尋找程式解決方案時能有更廣闊的資源可以參考。
+                    <br><br>
+                    若你想尋找的是凡事從團隊角度出發、熱愛解決問題、不斷持續學習與成長的成員，我想我正是那個不二人選！</p>
                 <div class="btn">
                     <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover">瞭解更多🙌🏻</a>
                 </div>
@@ -59,19 +59,19 @@
             <div class="container">
                 <div class="block-title with-img">
                     <h3>作品</h3>
-                    <img src="images/pic-title.svg" alt="">
+                    <img src="images/pic-title-anim.svg" alt="">
                 </div>
                 <div class="content-box">
                     <div class="box-img">
                         <img src="images/sample.jpg" alt="">
                     </div>
                     <div class="box-text">
-                        <h4>假字假字假字</h4>
+                        <h4>Stream Seller</h4>
                         <div class="tag">
                             <p>Vue</p>
                             <p>Bootstrap</p>
                         </div>
-                        <p>定拉跟清背枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重止唱雪重。</p>
+                        <p>Stream Seller 是一個直播帶貨工具，使用 Vite+Vue 以及 Bootstrap 進行開發，最初階段以 Facebook 用戶為主要客群。我在此專案中基本功能開發到一個段落時加入，主要工作為設定 UI 介面風格並直接修改，使用 Git 與其他工程師協作。</p>
                     </div>
                     <div class="box-btn" data-cursor="pointer">
                         <a href="#">
@@ -85,12 +85,12 @@
                         <img src="images/sample.jpg" alt="">
                     </div>
                     <div class="box-text">
-                        <h4>假字假字假字</h4>
+                        <h4>星展銀行 2023Q4
+                            <br>一起用星刷活動網頁</h4>
                         <div class="tag">
-                            <p>Vue</p>
-                            <p>Bootstrap</p>
+                            <p>jQuery</p>
                         </div>
-                        <p>定拉跟清背枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重枝。行几明友包枝可黃，古品欠高少哥哭昔弟結葉麼止唱雪重止唱雪重。</p>
+                        <p>因適逢花旗銀行個人消金業務併入星展，客戶希望以熱鬧活潑的風格推出 Q4 的刷卡活動網頁，整體使用星展慣用的暖色系及小插圖增加整體氣氛。</p>
                     </div>
                     <div class="box-btn" data-cursor="pointer">
                         <a href="#">
@@ -120,9 +120,77 @@
         <p>© Maxine Liao 2024</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
     <script src="js/magnetic-hover.js"></script>
     <script src="js/all.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.fromTo( ".hero-header h1:first-child",{ y: 80, opacity: 0}, { y: 0, opacity: 1, delay: 2});
+        gsap.fromTo( ".hero-header h1:nth-child(2)",{ y: 60, opacity: 0}, { y: 0, opacity: 1, delay: 2.3});
+        gsap.fromTo( ".hero-header h5",{ y: 40, opacity: 0}, { y: 0, opacity: 1, delay: 2.6});
+
+        gsap.to(".hero-header",{
+            scrollTrigger: {
+                trigger: "#lightning",
+                start: "top 75%",
+                markers: true,
+                scrub: 1,
+            },
+            opacity: 0,
+            ease: "power2.out",
+            duration: 1
+        });
+
+        gsap.to("#lightning",{
+            scrollTrigger: {
+                trigger: "#lightning",
+                start: "top center",
+                end: "bottom 100",
+                scrub: 2,
+            },
+            y: 20,
+            ease:"power3.out",
+            duration: 3
+        });
+
+        gsap.to("#spark-l",{
+            scrollTrigger: {
+                trigger: ".hero-header h5",
+                start: "top 0",
+                end: "+=200",
+                // markers: true,
+                scrub: 1,
+            },
+            y: -20,
+            x: -15,
+            opacity: 1,
+            rotation: -180,
+            ease:"power4.out",
+            duration: 3
+        });
+
+        gsap.to("#spark-r",{
+            scrollTrigger: {
+                trigger: ".hero-header h5",
+                start: "top 0",
+                end: "+=250",
+                // markers: true,
+                scrub: 1,
+            },
+            y: -20,
+            x: 15,
+            opacity: 1,
+            rotation: 180,
+            ease:"power4.out",
+            duration: 3
+        });
+    </script>
 </body>
 
 </html>

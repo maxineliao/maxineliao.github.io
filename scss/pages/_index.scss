@@ -1,39 +1,44 @@
 
 // hero-header
-.index h1 {
-    span {
-        color: $primary;
+.index {
+    h1 {
+        span {
+            color: $primary;
+        }
+        img {
+            width: 48px;
+            margin-left: $margin;
+            margin-bottom: $margin * -4;
+        }
     }
-    img {
-        width: 48px;
-        margin-left: $margin;
-        margin-bottom: $margin * -4;
-    }
-}
-
-.index .hero-header {
-    height: 100svh;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 6%;
+    .hero-header {
+        height: 100svh;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 6%;
+    }    
 }
 
 // scroll motion 1
 .lightning {
     height: 56px;
     position: relative;
-    transform: translateY(-20svh);
+    transform: translateY(-15svh);
 }
 
 .spark {
     width: 18px;
+    opacity: 0;
+    &.left {
+        transform: scaleX(-1) translateX(-30px);
+    }
+    &.right {
+        transform: translateX(-30px);
+    }
 }
 
-.spark.left {
-    transform: scaleX(-1);
-}
 
 // block 1
 .index .block1 p{
