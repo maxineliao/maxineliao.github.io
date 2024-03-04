@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Maxine Liao | Portfolio</title>    
+    <title>Maxine Liao | Portfolio Website</title>    
 </head>
 <body>
     <div id="cursor">
@@ -50,7 +50,7 @@
                     <br><br>
                     若你想尋找的是凡事從團隊角度出發、熱愛解決問題、不斷持續學習與成長的成員，我想我正是那個不二人選！</p>
                 <div class="btn">
-                    <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover">瞭解更多🙌🏻</a>
+                    <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover"><span>瞭解更多🙌🏻</span></a>
                 </div>
             </div>
         </section>
@@ -62,8 +62,8 @@
                     <img src="images/pic-title-anim.svg" alt="">
                 </div>
                 <div class="content-box">
-                    <div class="box-img">
-                        <img src="images/sample.jpg" alt="">
+                    <div class="box-img box-img-1">
+                        <img src="images/pic-collection-1.jpg" alt="">
                     </div>
                     <div class="box-text">
                         <h4>Stream Seller</h4>
@@ -75,14 +75,14 @@
                     </div>
                     <div class="box-btn" data-cursor="pointer">
                         <a href="#">
-                            <img src="images/pic-btn.svg" alt="">    
+                            <img id="btn-circle1" src="images/pic-btn.svg" alt="">    
                             <p>專案詳情</p>
                         </a>
                     </div>
                 </div>
                 <div class="content-box">
-                    <div class="box-img">
-                        <img src="images/sample.jpg" alt="">
+                    <div class="box-img box-img-2">
+                        <img src="images/pic-collection-2.jpg" alt="">
                     </div>
                     <div class="box-text">
                         <h4>星展銀行 2023Q4
@@ -94,14 +94,15 @@
                     </div>
                     <div class="box-btn" data-cursor="pointer">
                         <a href="#">
-                            <img src="images/pic-btn.svg" alt="">    
+                            <img id="btn-circle2" src="images/pic-btn.svg" alt="">    
                             <p>專案詳情</p>
                         </a>
                     </div>
                 </div>
                 <div class="btn">
-                    <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover">查看完整作品集🔥</a>
-                    <p class="decor">Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・ Check it out</p>
+                    <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover"><span>查看完整作品集🔥</span></a>
+                    <p class="decor up">Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・ Check it out</p>
+                    <p class="decor bottom">Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・ Check it out</p>
                 </div>
             </div>
         </section>
@@ -139,7 +140,6 @@
             scrollTrigger: {
                 trigger: "#lightning",
                 start: "top 75%",
-                markers: true,
                 scrub: 1,
             },
             opacity: 0,
@@ -164,7 +164,6 @@
                 trigger: ".hero-header h5",
                 start: "top 0",
                 end: "+=200",
-                // markers: true,
                 scrub: 1,
             },
             y: -20,
@@ -180,7 +179,6 @@
                 trigger: ".hero-header h5",
                 start: "top 0",
                 end: "+=250",
-                // markers: true,
                 scrub: 1,
             },
             y: -20,
@@ -190,6 +188,133 @@
             ease:"power4.out",
             duration: 3
         });
+
+        gsap.fromTo(".block1",{opacity:0},{
+            scrollTrigger: {
+                trigger: ".block1",
+                start: "top 75%",
+                end:"top 20%",
+                scrub: 1,
+            },
+            opacity: 1,
+            ease: "power2.out",
+            duration: 1
+        });
+
+        gsap.fromTo(".block1",{opacity:1},{
+            scrollTrigger: {
+                trigger: ".block1",
+                start: "top 100px",
+                scrub: 1,
+            },
+            opacity: 0,
+            ease: "power2.out",
+            duration: 1
+        });
+
+        gsap.fromTo(".block2",{opacity:0},{
+            scrollTrigger: {
+                trigger: ".block2",
+                start: "top 60%",
+                end:"top 10%",
+                scrub: 1,
+            },
+            opacity: 1,
+            ease: "power2.out",
+            duration: 1
+        });
+
+        gsap.fromTo(".block2",{opacity:1},{
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 75%",
+                scrub: 1,
+            },
+            opacity: 0,
+            duration: 1
+        });
+
+        gsap.to(".box-img-1 img",{
+            scrollTrigger: {
+                trigger: ".box-img-1",
+                start: "0 80%",
+                end: "+=600",
+                scrub: 2,
+            },
+            y: -30,
+            scale: 1.4,
+            duration: 5
+        });
+
+        gsap.to(".box-img-2 img",{
+            scrollTrigger: {
+                trigger: ".box-img-2",
+                start: "top 80%",
+                // end: "+=250",
+                scrub: 1,
+            },
+           
+            scale: 1.4,
+            duration: 5
+        });
+
+        gsap.to("#btn-circle1",{
+            scrollTrigger: {
+                trigger: "#btn-circle1",
+                start: "0 90%",
+                // end: "+=200",
+                scrub: 1,
+            },
+            rotation: -180,
+            // ease:"power4.out",
+            duration: 3
+        });
+
+        gsap.to("#btn-circle2",{
+            scrollTrigger: {
+                trigger: "#btn-circle2",
+                start: "0 90%",
+                // end: "+=200",
+                scrub: 1,
+            },
+            rotation: -180,
+            // ease:"power4.out",
+            duration: 3
+        });
+
+        gsap.to(".decor.up",{
+            scrollTrigger: {
+                trigger: ".decor.up",
+                start: "0 90%",
+                end: "+=400",
+                scrub: 1,
+            },
+            x: 160,
+            duration: 3
+        });
+
+        gsap.to(".decor.bottom",{
+            scrollTrigger: {
+                trigger: ".decor.bottom",
+                start: "0 90%",
+                scrub: 1,
+            },
+            x: -160,
+            duration: 3
+        });
+
+        gsap.fromTo(".contact",{opacity:0},{
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 70%",
+                end:"top 10%",
+                scrub: 1,
+            },
+            opacity: 1,
+            duration: 1
+        });
+
+      
     </script>
 </body>
 

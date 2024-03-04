@@ -342,6 +342,10 @@ footer {
   transform: translateX(-30px);
 }
 
+.index .block1, .index .block2, .index .contact {
+  opacity: 0;
+}
+
 .index .block1 p {
   display: inline-block;
   max-width: 720px;
@@ -353,7 +357,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 80px;
 }
 .index .block2 .content-box .box-img {
   width: 420px;
@@ -362,10 +366,10 @@ footer {
   overflow: clip;
 }
 .index .block2 .content-box .box-img img {
-  height: 100%;
+  width: 100%;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(1.2);
 }
 .index .block2 .content-box .box-text {
   text-align: left;
@@ -408,7 +412,7 @@ footer {
 .index .block2 .btn .decor {
   z-index: 0;
   display: block;
-  width: 110vw;
+  width: 300vw;
   color: #393E46;
   font-size: 32px;
   text-transform: uppercase;
@@ -416,9 +420,16 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(-5deg);
-  -ms-transform: translate(-50%, -50%) rotate(-5deg);
-  transform: translate(-50%, -50%) rotate(-5deg);
+}
+.index .block2 .btn .decor.up {
+  -webkit-transform: translate(-50%, -120%) rotate(-5deg);
+  -ms-transform: translate(-50%, -120%) rotate(-5deg);
+  transform: translate(-50%, -120%) rotate(-5deg);
+}
+.index .block2 .btn .decor.bottom {
+  -webkit-transform: translate(-50%, 5%) rotate(-5deg);
+  -ms-transform: translate(-50%, 5%) rotate(-5deg);
+  transform: translate(-50%, 5%) rotate(-5deg);
 }
 
 .index .tag {
