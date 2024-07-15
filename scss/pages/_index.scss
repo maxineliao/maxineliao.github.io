@@ -10,6 +10,9 @@
             margin-left: $margin;
             margin-bottom: $margin * -4;
         }
+        &:nth-child(2) {
+            margin-left: 0.4em;
+        }
     }
     .hero-header {
         height: 100svh;
@@ -19,6 +22,32 @@
         justify-content: center;
         padding-bottom: 6%;
     }    
+}
+@media screen and (max-width: 992px) {
+    .index {
+        h1 {
+            img {
+                width: 32px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .index {
+        h1 {
+            img {
+                position: absolute;
+                bottom: 20px;
+                right: -20px;
+            }
+            &:nth-child(2) {
+                margin-left: 0;
+            }
+        }
+        h5 {
+            margin-top: $margin;
+        }
+    }
 }
 
 // scroll motion 1
@@ -131,6 +160,60 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .index .block2 {
+        .content-box {
+            .box-btn {
+                left: auto;
+                right: 20px;
+                bottom: -80px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .index .block2 {
+        .content-box {
+            flex-wrap: wrap;
+            margin-top: $margin*2;
+            .box-text {
+                margin-top: $margin*2;
+                width: 420px;
+            }
+            .box-btn {
+                left: auto;
+                right: 20%;
+                bottom: auto;
+                top: 310px;
+                a {
+                    width: 80px;
+                }
+            }
+        }
+        .btn {
+            .decor {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .index .block2 {
+        .content-box {
+            .box-img {
+                width: 100%;
+                height: 220px;
+            }
+            .box-btn {
+                right: 0;
+                top: 230px;
+                a {
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
 .index .tag {
     margin-bottom: $margin*2;
     p{

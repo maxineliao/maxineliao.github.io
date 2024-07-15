@@ -27,7 +27,7 @@
         <div class="logo translate-hover" data-cursor="pointer"><a class="magnetic-element gravityButton" href="index.html"><img src="images/logo-bright.svg" alt="Maxine's LOGO"></a></div>
         <ul>
             <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="index.html">首頁</a></li>
-            <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="#">作品集</a></li>
+            <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="oops.html">作品集</a></li>
         </ul>
     </nav>
    
@@ -35,7 +35,7 @@
     <main class="about">
         <section class="hero-header">
             <div class="container">
-                <h2>關於我</h2>
+                <h1>關於我</h1>
                 <div class="hashtag hashtag1">#Problem Solver</div>
                 <div class="hashtag hashtag2">#Quick Learner</div>
                 <div class="hashtag hashtag3">#Thrive on challenges</div>
@@ -46,12 +46,12 @@
             <div class="container">
                 <div class="content-box">
                     <div class="box-img">
-                        <img src="images/portrait.png" alt="">
+                        <img src="images/portrait-0715.png" alt="">
                     </div>
                     <div class="box-text">
                         <p>影像傳播學系出身的我，學生時期主修影像前後期、動態圖像設計。出社會後自學 UI／UX 及前端    coding，做過許多接案的剪輯工作，並曾任剪輯師與網頁設計師。近期也參與了一個 SaaS 產品的 side project。
                         <br><br>
-                        每一個案子、每一份工作帶給我的影響造就了今天的我，也漸漸更加了解自己。在不同的環境下，我首先思考的都是如何讓團隊／產品更好，如何讓客戶信賴、甚至依賴我們。我喜歡解決問題，喜歡學習新技術，喜歡做出漂亮的成品。
+                        每一個案子、每一份工作帶給我的影響造就了今天的我，也漸漸更加了解自己。在不同的環境下，我首先思考的是如何讓團隊／產品更好，如何讓客戶信賴、甚至依賴我們。我喜歡解決問題，喜歡學習新技術，喜歡做出漂亮的成品。
                         <br><br>
                         讓我們一起創造更多優秀的產品吧！</p>
                     </div>
@@ -176,9 +176,72 @@
         <p>© Maxine Liao 2024</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
     <script src="js/magnetic-hover.js"></script>
     <script src="js/all.js"></script>
+    <!-- <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".block1",{
+            scrollTrigger: {
+                trigger: ".block1",
+                start: "top 20%",
+                scrub: 1,
+            },
+            opacity: 1,
+            ease: "power2.out",
+            duration: 1
+        });
+
+        gsap.fromTo(".block2",{opacity:0},{
+            scrollTrigger: {
+                trigger: ".block2",
+                start: "top 60%",
+                end:"top 10%",
+                scrub: 1,
+            },
+            opacity: 1,
+            ease: "power2.out",
+            duration: 1
+        });
+
+        gsap.fromTo(".block2",{opacity:1},{
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 75%",
+                scrub: 1,
+            },
+            opacity: 0,
+            duration: 1
+        });
+
+        gsap.to(".block3 .block-title",{
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 75%",
+                scrub: 1,
+            },
+            opacity: 0,
+            duration: 1
+        });
+
+        gsap.fromTo(".contact",{opacity:0},{
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 70%",
+                end:"top 10%",
+                scrub: 1,
+            },
+            opacity: 1,
+            duration: 1
+        });
+
+
+        gsap.set(".block1, .block2, .contact", {opacity:0});
+        </script> -->
 </body>
 
 </html>

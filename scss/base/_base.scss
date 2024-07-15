@@ -6,6 +6,7 @@
 .container {
     max-width: 1180px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
 html, body {
@@ -13,4 +14,10 @@ html, body {
     color: $grey-100;
     text-align: center;
     overflow-x: clip;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 5%;
+    }
 }

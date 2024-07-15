@@ -20,7 +20,7 @@
         <div class="logo translate-hover" data-cursor="pointer"><a class="magnetic-element gravityButton" href="index.html"><img src="images/logo-bright.svg" alt="Maxine's LOGO"></a></div>
         <ul>
             <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="about.html">關於我</a></li>
-            <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="#">作品集</a></li>
+            <li data-cursor="pointer"><a class="magnetic-element translate-hover" href="oops.html">作品集</a></li>
         </ul>
     </nav>
    
@@ -50,7 +50,7 @@
                     <br><br>
                     若你想尋找的是凡事從團隊角度出發、熱愛解決問題、不斷持續學習與成長的成員，我想我正是那個不二人選！</p>
                 <div class="btn">
-                    <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover"><span>瞭解更多🙌🏻</span></a>
+                    <a data-cursor="pointer" href="oops.html" class="btn-sec magnetic-element translate-hover"><span>瞭解更多🙌🏻</span></a>
                 </div>
             </div>
         </section>
@@ -71,10 +71,10 @@
                             <p>Vue</p>
                             <p>Bootstrap</p>
                         </div>
-                        <p>Stream Seller 是一個直播帶貨工具，使用 Vite+Vue 以及 Bootstrap 進行開發，最初階段以 Facebook 用戶為主要客群。我在此專案中基本功能開發到一個段落時加入，主要工作為設定 UI 介面風格並直接修改，使用 Git 與其他工程師協作。</p>
+                        <p>Stream Seller 是一個直播帶貨工具，使用 Vite+Vue 以及 Bootstrap 進行開發，最初階段以 Facebook 用戶為主要客群。我在此專案中基本功能開發到一個段落時加入，主要工作為設定 UI 介面風格並直接修改，使用 Git 與其他開發人員協作。</p>
                     </div>
                     <div class="box-btn" data-cursor="pointer">
-                        <a href="#">
+                        <a href="oops.html">
                             <img id="btn-circle1" src="images/pic-btn.svg" alt="">    
                             <p>專案詳情</p>
                         </a>
@@ -93,14 +93,14 @@
                         <p>因適逢花旗銀行個人消金業務併入星展，客戶希望以熱鬧活潑的風格推出 Q4 的刷卡活動網頁，整體使用星展慣用的暖色系及小插圖增加整體氣氛。</p>
                     </div>
                     <div class="box-btn" data-cursor="pointer">
-                        <a href="#">
+                        <a href="oops.html">
                             <img id="btn-circle2" src="images/pic-btn.svg" alt="">    
                             <p>專案詳情</p>
                         </a>
                     </div>
                 </div>
                 <div class="btn">
-                    <a data-cursor="pointer" href="#" class="btn-sec magnetic-element translate-hover"><span>查看完整作品集🔥</span></a>
+                    <a data-cursor="pointer" href="oops.html" class="btn-sec magnetic-element translate-hover"><span>查看完整作品集🔥</span></a>
                     <p class="decor up">Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・ Check it out</p>
                     <p class="decor bottom">Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・  Check it out   ・ Check it out</p>
                 </div>
@@ -189,7 +189,7 @@
             duration: 3
         });
 
-        gsap.fromTo(".block1",{opacity:0},{
+        gsap.to(".block1",{
             scrollTrigger: {
                 trigger: ".block1",
                 start: "top 75%",
@@ -201,13 +201,13 @@
             duration: 1
         });
 
-        gsap.fromTo(".block1",{opacity:1},{
+        gsap.from(".block1",{
             scrollTrigger: {
                 trigger: ".block1",
-                start: "top 100px",
+                start: "top 20%",
                 scrub: 1,
             },
-            opacity: 0,
+            opacity: 1,
             ease: "power2.out",
             duration: 1
         });
@@ -314,7 +314,7 @@
             duration: 1
         });
 
-      
+        gsap.set(".block1, .block2, .contact", {opacity:0});
     </script>
 </body>
 

@@ -11,3 +11,12 @@
         display: block;
     }
 }
+@media screen and (max-width: 480px){
+    .contact{
+        padding-top: $padding*10;
+        padding-bottom: $padding*10;
+        a {
+            font-size: 1.75em;
+        }
+    }
+}

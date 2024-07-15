@@ -10,6 +10,7 @@
         font-size: 1.25rem;
         position: absolute;
         transition: all 500ms ease;
+        white-space: nowrap;
     }
     .hashtag1 {
         color: $secondary;
@@ -98,7 +99,7 @@
         position: relative;
         .line-v {
             display: block;
-            height: 1660px;
+            height: 1590px;
             border-right: 1px solid $grey-100-20;
             @include center;
         }
@@ -139,6 +140,73 @@
         .sub-title {
             font-weight: 500;
         } 
+    } 
+}
+@media screen and (max-width: 768px) {
+    .about .hero-header {
+        padding-bottom: 100px;
     }
-  
+    .about .block1 {
+        .content-box {
+            flex-wrap: wrap;
+            .box-img {
+                margin-right: 0;
+            }
+            .box-text {
+                width: 80%;
+                margin-top: $margin*2;
+            }
+        }
+    }
+    .about .block2 {
+        .container {
+            .box-text {
+                width: 80%;
+                margin-top: $margin*2;
+                &:last-child {
+                    width: inherit;
+                }
+            }
+        }
+    }
+    .about .block3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .about .hero-header {
+        .hashtag {
+            font-size: 1rem;
+        }
+        .hashtag1 {
+            top: 220px;
+        } 
+        .hashtag2 {
+            top: 236px;
+        } 
+        .hashtag3 {
+            top: 290px;
+        } 
+    }
+    .about .block1 {
+        .content-box {
+            .box-img {
+                width: 95%;
+            }
+            .box-text {
+                width: 95%;
+                margin-top: $margin*2;
+            }
+        }
+    }
+   .about .block2 {
+        .container {
+            .box-text div {
+                width: 100%;
+                p {
+                    margin: 4px 8px;
+                }
+            }
+        }
+   }
 }

@@ -19,3 +19,12 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media screen and (max-width: 480px){
+    .block-title img {
+        width: 150vw;
+    }
+    .block {
+        padding: 40px 0;
+    }
+}
