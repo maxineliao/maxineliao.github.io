@@ -48,7 +48,11 @@
     transform: translateX(-50%);
     width: 350px;
 }
-
+@media screen and (max-width: 480px) {
+    .intro img {
+        width: 240px;
+    }
+}
 @include keyframes(up) {
     0% {
         transform: translate3d(0, 0, 0);
