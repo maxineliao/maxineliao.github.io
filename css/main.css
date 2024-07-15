@@ -463,8 +463,8 @@ footer {
 }
 .index .block2 .content-box .box-btn {
   position: absolute;
-  bottom: -40px;
-  left: 480px;
+  bottom: -70px;
+  left: 450px;
 }
 .index .block2 .content-box .box-btn a {
   position: relative;
@@ -616,7 +616,7 @@ footer {
   transform: translateX(-50%) rotate(7deg);
 }
 .about .hero-header :hover .hashtag3 {
-  top: 320px;
+  top: 350px;
   left: calc(50% - 60px);
 }
 
