@@ -89,6 +89,7 @@
         align-items: center;
         justify-content: space-around;
         position: relative;
+        z-index: 2;
         margin-bottom: $margin*10;
         .box-img {
             width: 420px;

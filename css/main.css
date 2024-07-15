@@ -443,6 +443,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   position: relative;
+  z-index: 2;
   margin-bottom: 80px;
 }
 .index .block2 .content-box .box-img {
