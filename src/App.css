@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+}
+
+@utility container {
+    @apply mx-auto;
+    margin-inline: auto;
+    padding-inline: 15px;
+    
+    @variant lg {
+      padding-inline: 80px;
+    }
+    
+    @variant xl {
+      padding-inline: 120px;
+    }
+  }
+
+@theme {
+    --font-display: "Poppins", "Noto Sans TC", "sans-serif";
+    --breakpoint-3xl: 120rem;
+    --color-neon-light: #DFFF80;
+    --color-neon: #BFFF00;
+    --color-neon-dark: #99CC00;
+    --color-black: #202020;
+}
