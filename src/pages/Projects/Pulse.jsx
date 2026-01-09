@@ -31,7 +31,10 @@ export default function Pulse() {
         <section>
             <div className="container">
                 <div className="max-w-[740px] mx-auto text-white">
-                    <h1 className="text-neon text-2xl font-semibold text-center py-16">PULSE 音樂播放器 ｜<span className="block sm:hidden"></span> Side Project</h1>
+                    <div className="text-neon text-2xl font-semibold text-center py-16">
+                        <h1 className="mb-1">PULSE 音樂播放器 ｜<span className="block sm:hidden"></span> Side Project</h1>
+                        <p className="text-white text-base font-normal">串接 Spotify API 的 Web Player，從 OAuth 2.0 驗證到播放狀態管理的完整前端實作</p>    
+                    </div>
                     <img src={projectPulse} alt="" className="max-w-[500px] mx-auto mb-10"/>
                     <div className="mb-20">
                         <h2 className="text-neon-light text-xl font-semibold mb-2 text-center">專案背景</h2>

@@ -30,7 +30,10 @@ export default function SlamAccess() {
         <section>
             <div className="container">
                 <div className="max-w-[740px] mx-auto text-white">
-                    <h1 className="text-neon text-2xl font-semibold text-center py-16">Slam 專案預覽管理系統｜<span className="block sm:hidden"></span>公司內部工具開發</h1>
+                    <div className="text-neon text-2xl font-semibold text-center py-16">
+                        <h1 className="mb-1">Slam 專案預覽管理系統｜<span className="block sm:hidden"></span>公司內部工具開發</h1>
+                        <p className="text-white text-base font-normal">公司內部專案預覽管理系統，著重資安與流程設計</p>    
+                    </div>
                     <div className="mb-20">
                         <h2 className="text-neon-light text-xl font-semibold mb-2 text-center">專案背景</h2>
                         <p className="mb-4">在申朗創意擔任設計兼前端的期間，我觀察到團隊在交付銀行客戶預覽案件時，長期依賴 FTP 與手動作業，不僅流程繁瑣，也常因安全性不足（http://）而遇到瀏覽器阻擋、Google 誤判惡意網頁等問題。除此之外，像是需要定期手動清檔、交付檔案時壓縮檔密碼難以管理、總覽頁難以快速查找專案等問題，也讓團隊效率受限。</p>

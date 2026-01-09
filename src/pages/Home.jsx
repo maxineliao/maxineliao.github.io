@@ -61,17 +61,16 @@ export default function Home() {
 		<>
 			<Header mode={mode} setMode={setMode} />
 			<section className="pt-72 pb-50 text-center h-[90vh] flex flex-col items-center justify-center gap-5">
-				<h1 className="relative dark:text-neon text-7xl md:text-8xl lg:text-9xl 2xl:text-[140px] font-extrabold italic">
-					Not a <span className="block md:hidden" />
-					designer.
-					<span className="text-3xl md:text-4xl absolute -top-[2.4em] md:-top-[1.8em] left-[calc(50%+20px)] md:left-[calc(22%+10px)]">
+				<h1 className="relative dark:text-neon text-6xl md:text-8xl lg:text-8xl 2xl:text-[120px] font-extrabold italic leading-[0.8] px-2">
+					Front-end Developer<br /><span className="dark:text-neon-light text-2xl md:text-4xl lg:text-5xl 2xl:text-[72px]">with Design Background</span>
+					{/* <span className="text-3xl md:text-4xl absolute -top-[2.4em] md:-top-[1.8em] left-[calc(50%+20px)] md:left-[calc(22%+10px)]">
 						only
 						<img
 							className="mt-1"
 							src={iconInsert}
 							alt="insert icon"
 						/>
-					</span>
+					</span> */}
 				</h1>
 				<p className="text-white text-base lg:text-xl/10 px-4">
 					<span className="opacity-30">
@@ -81,9 +80,9 @@ export default function Home() {
 					</span>{" "}
 					Hi，我是Max！
 					<span className="block sm:hidden" />
-					設計是我的起點，並在開發中找到熱忱。
+					以 React 專案開發為導向，
 					<span className="hidden sm:block" />
-					憑藉對視覺、使用體驗的敏感度，打造更多面向的開發思維
+					擁有設計背景，擅長在複雜的需求中尋找可落地的執行方式
 					<span className="opacity-30">{`</p>`}</span>
 				</p>
 				<div className="flex flex-col items-center mt-20">

@@ -9,9 +9,9 @@ export default defineConfig(({ mode }) => ({
     react(),
     tailwindcss(),
   ],
-  base: mode === "production" ? "/maxineliao.github.io/" : "/",
+  base: "/",
   server: {
-    open: '/',
+    open: 'index.html',
   },
   resolve: {
     alias: {

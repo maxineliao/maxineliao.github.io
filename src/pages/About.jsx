@@ -88,8 +88,12 @@ export default function About() {
 			<section className="py-[60px] text-white">
 				<div className="container">
 					<div className="mb-16 md:mb-8 flex flex-col md:flex-row items-center justify-center gap-4">
-						<h2 className="text-neon text-3xl md:text-4xl font-bold text-center md:text-right md:w-[35%]">前端技能</h2>
-						<div className="text-lg text-center md:text-left md:w-[65%]">React&ensp;&ensp;Tailwind&ensp;&ensp;Bootstrap&ensp;&ensp;GSAP&ensp;&ensp;Lottie&ensp;&ensp;Axios<span className="hidden md:block"></span>Git&ensp;&ensp;Node.js&ensp;&ensp;<span className="block md:hidden"></span>Firebase（Auth / Hosting / Firestore）</div>
+						<h2 className="text-neon text-3xl md:text-4xl font-bold text-center md:text-right md:w-[35%]">前端核心技能</h2>
+						<div className="text-lg text-center md:text-left md:w-[65%]">React（Hooks / Router / Redux）&ensp;&ensp;JavaScript&ensp;&ensp;<br />API 串接（REST / OAuth 2.0）&ensp;&ensp;Axios&ensp;&ensp;Tailwind&ensp;&ensp;<span className="hidden md:block"></span>Bootstrap&ensp;&ensp;GitHub&ensp;&ensp;</div>
+					</div>
+					<div className="mb-16 md:mb-8 flex flex-col md:flex-row items-center justify-center gap-4">
+						<h2 className="text-neon text-3xl md:text-4xl font-bold text-center md:text-right md:w-[35%]">其他輔助與平台</h2>
+						<div className="text-lg text-center md:text-left md:w-[65%]">Firebase（Auth / Hosting / Firestore）<br />Node.js（基礎 API / 工具）<br />GSAP / Lottie（互動動畫）<br />Web Security（XSS / CSP / redirect）</div>
 					</div>
 					<div className="mb-16 md:mb-8 flex flex-col md:flex-row items-center justify-center gap-4">
 						<h2 className="text-2xl font-medium text-center md:text-right md:w-[35%]">設計背景</h2>
@@ -111,9 +115,11 @@ export default function About() {
 						<p className="text-neon-light">網頁開發設計師</p>
 					</div>
 					<ul className="list-disc w-[320px] md:w-[350px] px-3 md:px-0 ml-4 sm:ml-0">
-						<li>製作銀行活動頁與互動視覺</li>
-						<li>處理活動頁 JavaScript 資安弱掃（XSS、open redirect、CSP）</li>
-						<li>整合 Swiper / 追蹤碼設定 / 免責申明跳窗<br />為客製通用 JS，並撰寫使用文件</li>
+						<li>負責銀行活動型網頁前端開發，處理 JavaScript 互動與第三方套件整合</li>
+						<li>配合銀行客戶資安弱掃規範，修正前端程式以避免 XSS、Open Redirect 等風險</li>
+						<li>將第三方套件（Swiper）的初始化與參數設定改寫為可控結構，降低 DOM-based injection 風險</li>
+						<li>協助調整 Content Security Policy（CSP）與前端資源引用方式，確保通過自動化掃描</li>
+						<li>整合 Swiper / 追蹤碼設定 / 免責申明跳窗為客製通用 JS，並撰寫使用文件</li>
 					</ul>
 				</div>
 				<div className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-center border-b-1 py-8 bg-black">
@@ -164,7 +170,7 @@ export default function About() {
 			</section>
 			<section className="py-[60px] text-gray-300">
 				<div className="container" id="background">
-					<h2 className="text-neon text-3xl md:text-4xl font-bold mb-4 text-center px-2">背景經歷</h2>
+					<h2 className="text-neon text-3xl md:text-4xl font-bold mb-4 text-center px-2">技術與背景</h2>
 					<div className="flex flex-col space-y-2 mb-12">
 						<p className="text-black bg-gray-300 px-2 py-0.5 mb-3 w-fit text-lg font-medium">從設計師身份到前端的轉變</p>
 						<p >過去從影像剪輯、動畫到網頁設計，我不停的探索自己想要的方向。利用時間學習 UIUX、切版、開發 React 專案、串 API、Git 協作等，對於技術的焦慮及對學習的渴望帶領著我，不斷擴大自己的技能樹。</p>
