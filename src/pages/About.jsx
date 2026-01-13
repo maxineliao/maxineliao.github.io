@@ -75,7 +75,7 @@ export default function About() {
 						<PersonalityTag label="#Quick Learner" x={-5} y={0.8} rotate={1} color="normal"/>
 						<PersonalityTag label="#Thrive on challenges" x={-15} y={2.5} rotate={6} color="light"/>
 					</h1>
-					<p className="md:text-center mb-8">嗨，我是 Max！<br />現職網頁開發設計師，目標是結合既有的設計美感，<span className="hidden md:block"></span>成為同時具備視覺與工程能力的前端工程師。<br /><br />前端方面曾實作 React、Tailwind、Bootstrap、GSAP，熟悉 Git 版控，<span className="hidden md:block"></span>也在個人專案中實際使用過 Firebase 與 Node.js。<br /><br />在現職中，我也曾處理客戶對活動網頁 JavaScript 的資安弱掃需求，<span className="hidden md:block"></span>實際與客戶端的 AI scanner 來回修正規則（被折磨過），<span className="hidden md:block"></span>也因此更理解自動化檢測對程式 pattern 的要求，<br />以及其與語言模型在理解層面的差異🤖。</p>
+					<p className="md:text-center mb-8">嗨，我是 Max！<br />現職前端設計師，目標是結合既有的設計美感，<span className="hidden md:block"></span>成為同時具備視覺與工程能力的前端工程師。<br /><br />前端方面曾實作 React、Tailwind、Bootstrap、GSAP，熟悉 Git 版控，<span className="hidden md:block"></span>也在個人專案中實際使用過 Firebase 與 Node.js。<br /><br />在現職中，我也曾處理客戶對活動網頁 JavaScript 的資安弱掃需求，<span className="hidden md:block"></span>實際與客戶端的 AI scanner 來回修正規則（被折磨過），<span className="hidden md:block"></span>也因此更理解自動化檢測對程式 pattern 的要求，<br />以及其與語言模型在理解層面的差異🤖。</p>
 					<a href="#background" onClick={(e)=> {
 						e.preventDefault();
 						scrollToId("background");
