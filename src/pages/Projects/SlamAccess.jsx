@@ -86,7 +86,7 @@ export default function SlamAccess() {
                                 <span className="text-black bg-white font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">挑戰</span>
                                 <p>設計師需手動將檔案上傳 FTP 並分享連結，缺乏系統化管理，且容易動到他人檔案。另外，客戶在瀏覽網頁時，無法確認 Meta Title 等資訊是否正確，導致有時交付檔案後才發現問題。</p>
                             </div>
-                            <div className="mb-4 flex items-baseline flex-wrap">
+                            <div className="mb-4 flex items-baseline">
                                 <span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">解法</span>
                                 <ul>
                                     <li className="flex items-center gap-2 mb-2">
@@ -104,19 +104,18 @@ export default function SlamAccess() {
                                             <path d="M9.48954 0L10.1768 5.0229L15 7.00281L9.05544 8.9771L5.51042 14L4.82315 8.9771L0 7.00281L5.94452 5.0229L9.48954 0Z" fill="#BFFF00"/>
                                             </svg>
                                         </div>
-                                       <span>注入 Preview script 抓取預覽頁 HTML meta 資訊，並透過 iframe postMessage 將 HTML meta 資訊同步至前端 UI</span>
+                                       <span>注入 Preview script 抓取預覽頁 HTML meta 資訊，並透過 iframe postMessage 將 HTML meta 資訊同步至前端 UI；每個專案透過隨機 previewKey 生成獨立預覽頁面</span>
                                     </li>
                                     <li className="flex flex-wrap items-center gap-2 mb-2">
                                         <picture>
                                             <source media="(min-width: 640px)" srcset={img1} />
                                             <img src={img1_sm} alt="" />
                                         </picture>
-                                        <div className="w-full">每個專案透過隨機 previewKey 生成獨立預覽頁面</div>
                                     </li>
                                 </ul>
-                                <div className="relative py-[40px] w-full">
-                                    <img src={imgCreate} alt="專案建立流程" className="w-full"/>
-                                </div>
+                            </div>
+                            <div className="relative py-[40px] w-full">
+                                <img src={imgCreate} alt="專案建立流程" className="w-full"/>
                             </div>
                             {/* <div className="border-1 border-neon-light p-6 rounded-2xl mb-8">
                                 <p className="text-neon-light text-center mb-2">登入驗證設計與權限控管（Firebase Auth + Token-Based Access）</p>
@@ -140,7 +139,7 @@ export default function SlamAccess() {
                                 <span className="text-black bg-white font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">挑戰</span>
                                 <p>需要讓內部人員快速存取預覽頁，同時確保外部客戶需密碼才可瀏覽。</p>
                             </div>
-                            <div className="flex items-baseline flex-wrap">
+                            <div className="flex items-baseline">
                                 <span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">解法</span>
                                 <ul>
                                     <li className="flex flex-wrap items-center gap-2 mb-2">
@@ -156,9 +155,9 @@ export default function SlamAccess() {
                                         </picture>
                                     </li>
                                 </ul>
-                                <div className="relative py-[40px] w-full">
-                                    <img src={imgPreview} alt="專案預覽" className="w-full"/>
-                                </div>
+                            </div>
+                            <div className="relative py-[40px] w-full">
+                                <img src={imgPreview} alt="專案預覽" className="w-full"/>
                             </div>
                         </div>
                     </div>
@@ -254,7 +253,7 @@ export default function SlamAccess() {
                                 <span className="text-black bg-white font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">挑戰</span>
                                 <p>舊流程需人工搬移或刪除過期檔案，以使預覽連結失效</p>
                             </div>
-                            <div className="flex items-baseline flex-wrap">
+                            <div className="flex items-baseline">
                                 <span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">解法</span>
                                 <ul>
                                     <li className="flex flex-wrap items-center gap-2 mb-2">
@@ -269,9 +268,7 @@ export default function SlamAccess() {
                                             <img src={img3_sm} alt="" />
                                         </picture>
                                     </li>
-                                     <div className="relative py-[40px] w-full">
-                                        <img src={imgDisable} alt="專案過期" className="w-full"/>
-                                    </div>
+                                    
                                     {/* <li className="flex items-center gap-2 mb-2">
                                         <div>
                                             <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,6 +286,9 @@ export default function SlamAccess() {
                                         <span>狀態變更後連結將被封鎖</span>
                                     </li> */}
                                 </ul>
+                            </div>
+                             <div className="relative py-[40px] w-full">
+                                <img src={imgDisable} alt="專案過期" className="w-full"/>
                             </div>
                         </div>
                     </div>
