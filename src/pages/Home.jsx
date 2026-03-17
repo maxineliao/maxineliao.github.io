@@ -7,12 +7,19 @@ import projectPulse from "@/assets/images/index_project_pulse.jpg";
 import maxineLogoLg from "@/assets/images/maxine_liao_lg.png";
 
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
 
 export default function Home() {
+	const aboutRef = useRef(null);
+	const scrollToAbout = () => {
+		aboutRef.current?.scrollIntoView({
+			behavior: "smooth",
+			block: "start"
+		});
+	};
 	const [mode, setMode] = useState("Cool");
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 	const [isTablet, setIsTablet] = useState(
@@ -56,13 +63,14 @@ export default function Home() {
 			</span>
 		);
 	}
-
+	
 	return (
 		<>
 			<Header mode={mode} setMode={setMode} />
 			<section className="pt-72 pb-50 text-center h-[90vh] flex flex-col items-center justify-center gap-5">
-				<h1 className="relative dark:text-neon text-6xl md:text-8xl lg:text-8xl 2xl:text-[120px] font-extrabold italic leading-[0.8] px-2">
-					Front-end Developer<br /><span className="dark:text-neon-light text-2xl md:text-4xl lg:text-5xl 2xl:text-[72px]">with Design Background</span>
+				<h1 className="relative dark:text-neon text-6xl md:text-8xl lg:text-8xl 2xl:text-[120px] font-extrabold italic leading-[0.6] px-2">
+					Hi! I'm Max.<br />
+					<span className="dark:text-neon-light text-2xl md:text-3xl lg:text-4xl 2xl:text-[60px]">Front-End Developer <small className="font-light">×</small> Problem Solver</span>
 					{/* <span className="text-3xl md:text-4xl absolute -top-[2.4em] md:-top-[1.8em] left-[calc(50%+20px)] md:left-[calc(22%+10px)]">
 						only
 						<img
@@ -80,35 +88,35 @@ export default function Home() {
 					</span>{" "}
 					Hi，我是Max！
 					<span className="block sm:hidden" />
-					以 React 專案開發為導向，
+					以 React 專案開發為主，
 					<span className="hidden sm:block" />
-					擁有設計背景，擅長在複雜的需求中尋找可落地的執行方式
+					擁有設計背景，擅長溝通與拆解需求，並提出可行的解決方式
 					<span className="opacity-30">{`</p>`}</span>
 				</p>
-				<div className="flex flex-col items-center mt-20">
+				<a className="flex flex-col items-center mt-20 cursor-pointer" onClick={scrollToAbout}>
 					<p className="dark:text-neon mb-4">scroll down</p>
-          <motion.div  
-          className="flex justify-center"
-          animate={{ y: [0, 12, 0] }}
-          transition={{
-            duration: 1.2,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}>
-            <img
-              src={iconArrow}
-              alt="arrow"
-              className="rotate-[90deg] w-[40px]"
-            />
-          </motion.div>
-				</div>
+					<motion.div  
+					className="flex justify-center"
+					animate={{ y: [0, 12, 0] }}
+					transition={{
+						duration: 1.2,
+						repeat: Infinity,
+						ease: 'easeInOut',
+					}}>
+						<img
+						src={iconArrow}
+						alt="arrow"
+						className="rotate-[90deg] w-[40px]"
+						/>
+					</motion.div>
+				</a>
 			</section>
 			<motion.section
-      initial={{ opacity: 0, y: 80 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      viewport={{ margin: '-25% 0px -25% 0px', once: false }}
-      className="py-[80px] sm:py-[160px] text-white">
+				initial={{ opacity: 0, y: 80 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.6, ease: 'easeOut' }}
+				viewport={{ margin: '-25% 0px -25% 0px', once: false }}
+				className="py-[80px] sm:py-[160px] text-white">
 				<div className="relative mb-20">
 					<picture>
 						<source
@@ -121,23 +129,19 @@ export default function Home() {
 							className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  z-0 w-[200px] md:w-3/4 lg:w-4/5 opacity-50"
 						/>
 					</picture>
-					<p className="mx-auto relative dark:bg-black/85 sm:dark:bg-black/95 w-full md:w-2/3 z-1 p-5 mb-3">
-						嗨，我是 Maxine，同事都叫我
-						Max。來自設計背景的我，擁有視覺敏銳度，也具備前端開發能力，正邁向更完整的工程角色。
+					<p ref={aboutRef} className="mx-auto relative dark:bg-black/85 sm:dark:bg-black/95 w-full md:w-2/3 z-1 p-4 md:p-8 mb-3 text-lg md:text-center">
+						嗨，我是 Maxine，同事都叫我 Max。<br />來自設計背景的我，具備前端開發能力，也擁有視覺敏銳度，正邁向更完整的開發角色。
 						<br />
 						<br />
-						我曾主動開發公司內部的網頁預覽系統——專案使用 React +
-						Tailwind、Express +
-						Firebase，為銀行客戶打造可加密與限時失效的網頁預覽系統，也涵蓋基本的專案管理功能。
+						我曾主動開發公司內部的網頁預覽系統，從功能規劃到前後端皆獨立完成——<br />專案使用 React +
+						Tailwind、Express + Firebase + Cloud Run，<br />為銀行客戶打造可加密與限時失效的網頁預覽系統，也涵蓋基本的專案管理功能。
 						<br />
 						<br />
-						我也製作過 Spotify API 網頁播放器，透過自製 React Hook
-						管理播放狀態與 OAUTH 2.0 登入驗證，實際強化 API
-						串接與元件架構理解。
+						我也製作過使用 Spotify API 的網頁播放器，<br />透過自製 React Hook 管理播放狀態與 OAUTH 2.0 登入驗證，<br />實際強化 API 串接與元件架構理解。
 						<br />
 						<br />
 						身為一個有些技術 FOMO
-						的人，我喜歡點亮技能樹、不斷學新東西。不只在工作中實踐所學，也樂於迎戰未曾接觸的技術挑戰。
+						的人，我喜歡點亮技能樹、不斷學習新的酷東西。<br />不只在工作中實踐所學，也樂於迎戰未曾接觸的技術挑戰。<br />
 						<span className="font-medium text-neon-light">
 							期待能加入開發導向的團隊，在對的環境中厚積薄發，發揮更大的價值。
 						</span>
@@ -218,14 +222,13 @@ export default function Home() {
 							<h3 className="font-medium text-xl lg:text-3xl mb-2">
 								專案預覽管理系統
 							</h3>
-							<p>
-								用以管理專案資料及使用加密方式提供客戶端預覽網頁的系統。
+							<p>用以協助公司管理專案、並為銀行客戶打造密碼保護及到期自動失效的網頁預覽功能，取代 FTP 手動交付流程。
 							</p>
 							<Link
 								to="projects/slam-access"
 								className="text-neon self-end mt-4 flex items-center gap-2"
 							>
-								完整介紹 Let me tell you moooore
+								完整介紹
 								<img
 									src={iconArrow}
 									alt="arrow"
@@ -293,13 +296,13 @@ export default function Home() {
 								PULSE Web Player
 							</h3>
 							<p>
-								PULSE 是一個串接 Spotify API 的自製網頁播放器！
+								PULSE 是一個串接 Spotify API 的自製網頁播放器，實際操作播放控制、播放器狀態管理及 OAUTH 2.0驗證。
 							</p>
 							<Link
 								to="/projects/pulse"
 								className="text-neon self-end mt-4 flex items-center gap-2"
 							>
-								完整介紹 Let me tell you moooore
+								完整介紹
 								<img
 									src={iconArrow}
 									alt="arrow"
@@ -345,7 +348,7 @@ export default function Home() {
 							</div>
 						</div>
 					</motion.div>
-					<motion.a
+					{/* <motion.a
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -365,7 +368,7 @@ export default function Home() {
 						>
 							更多作品 整理中
 						</span>
-					</motion.a>
+					</motion.a> */}
 				</div>
 			</section>
 			<Footer />

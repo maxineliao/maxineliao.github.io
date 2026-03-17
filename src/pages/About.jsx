@@ -75,7 +75,7 @@ export default function About() {
 						<PersonalityTag label="#Quick Learner" x={-5} y={0.8} rotate={1} color="normal"/>
 						<PersonalityTag label="#Thrive on challenges" x={-15} y={2.5} rotate={6} color="light"/>
 					</h1>
-					<p className="md:text-center mb-8">嗨，我是 Max！<br />現職前端設計師，目標是結合既有的設計美感，<span className="hidden md:block"></span>成為同時具備視覺與工程能力的前端工程師。<br /><br />前端方面曾實作 React、Tailwind、Bootstrap、GSAP，熟悉 Git 版控，<span className="hidden md:block"></span>也在個人專案中實際使用過 Firebase 與 Node.js。<br /><br />在現職中，我也曾處理客戶對活動網頁 JavaScript 的資安弱掃需求，<span className="hidden md:block"></span>實際與客戶端的 AI scanner 來回修正規則（被折磨過），<span className="hidden md:block"></span>也因此更理解自動化檢測對程式 pattern 的要求，<br />以及其與語言模型在理解層面的差異🤖。</p>
+					<p className="md:text-center mb-8">嗨，我是 Max！<br />現職前端設計師，擁有設計及前端開發實作經驗，<span className="hidden md:block"></span>也因此擅長拆解產品需求，並在不同的角色間建立有效的溝通橋樑。<br /><br />前端經驗包含 React、Tailwind、Bootstrap、GSAP，熟悉 Git 版控，<span className="hidden md:block"></span>也在單人專案中實際使用過 Firebase 、 Node.js 以及使用 Cloud Run 部署後端。<br /><br />在現職中，我也曾處理客戶對活動網頁 JavaScript 的資安弱掃需求，<span className="hidden md:block"></span>實際與客戶端的 AI scanner 來回修正規則（被折磨過），<span className="hidden md:block"></span>也因此更理解自動化檢測對程式 pattern 的要求，<br />以及其與語言模型在理解層面的差異🤖。</p>
 					<a href="#background" onClick={(e)=> {
 						e.preventDefault();
 						scrollToId("background");
@@ -93,7 +93,7 @@ export default function About() {
 					</div>
 					<div className="mb-16 md:mb-8 flex flex-col md:flex-row items-center justify-center gap-4">
 						<h2 className="text-neon text-3xl md:text-4xl font-bold text-center md:text-right md:w-[35%]">其他輔助與平台</h2>
-						<div className="text-lg text-center md:text-left md:w-[65%]">Firebase（Auth / Hosting / Firestore）<br />Node.js（基礎 API / 工具）<br />GSAP / Lottie（互動動畫）<br />Web Security（XSS / CSP / redirect）</div>
+						<div className="text-lg text-center md:text-left md:w-[65%]">Firebase（Auth / Hosting / Firestore）<br />Cloud Run（IAM權限管理、Cloud Storage）<br />Node.js（基礎 API / service 檔）<br />GSAP / Lottie（互動動畫）<br />Basic Web Security（XSS / CSP / redirect）</div>
 					</div>
 					<div className="mb-16 md:mb-8 flex flex-col md:flex-row items-center justify-center gap-4">
 						<h2 className="text-2xl font-medium text-center md:text-right md:w-[35%]">設計背景</h2>
@@ -101,7 +101,7 @@ export default function About() {
 					</div>
 					<div className="mb-16 md:mb-8 flex flex-col md:flex-row items-center justify-center gap-4">
 						<h2 className="text-2xl font-medium text-center md:text-right md:w-[35%]">工作風格與軟實力</h2>
-						<div className="text-lg text-center md:text-left md:w-[65%]">團隊溝通能力&ensp;&ensp;注重細節<span className="hidden md:inline">&ensp;&ensp;</span><span className="block md:hidden"></span>熟悉與客戶 / 設計師溝通<span className="hidden md:inline">&ensp;&ensp;</span><br />善於拆解與解決問題<span className="hidden md:inline">&ensp;&ensp;</span><span className="block md:hidden"></span>學習速度快&ensp;&ensp;流暢英語溝通&ensp;&ensp;同理心&ensp;&ensp;幽默感</div>
+						<div className="text-lg text-center md:text-left md:w-[65%]">流暢英語溝通&ensp;&ensp;團隊溝通能力&ensp;&ensp;注重細節<br />熟悉與客戶 / 設計師溝通<span className="hidden md:inline">&ensp;&ensp;</span><br />善於拆解與解決問題<span className="hidden md:inline">&ensp;&ensp;</span><span className="block md:hidden"></span>學習速度快&ensp;&ensp;同理心&ensp;&ensp;幽默感</div>
 					</div>
 				</div>
 			</section>
@@ -112,14 +112,15 @@ export default function About() {
 					<div className="min-w-[320px] md:min-w-[192px] px-3 md:px-0">
 						<p className="text-base mb-1">2023 May－Now</p>
 						<p className="text-neon-light text-3xl font-medium mb-1">申朗創意</p>
-						<p className="text-neon-light">網頁開發設計師</p>
+						<p className="text-neon-light">前端設計師</p>
 					</div>
 					<ul className="list-disc w-[320px] md:w-[350px] px-3 md:px-0 ml-4 sm:ml-0">
-						<li>負責銀行活動型網頁前端開發，處理 JavaScript 互動與第三方套件整合</li>
-						<li>配合銀行客戶資安弱掃規範，修正前端程式以避免 XSS、Open Redirect 等風險</li>
-						<li>將第三方套件（Swiper）的初始化與參數設定改寫為可控結構，降低 DOM-based injection 風險</li>
-						<li>協助調整 Content Security Policy（CSP）與前端資源引用方式，確保通過自動化掃描</li>
-						<li>整合 Swiper / 追蹤碼設定 / 免責申明跳窗為客製通用 JS，並撰寫使用文件</li>
+						<li className="mb-2">開發公司專案管理系統，前端使用 React + Tailwind、後端使用 Express + Firebase + Cloud Run，為銀行客戶打造密碼保護及到期自動失效的網頁預覽功能</li>
+						<li className="mb-2">負責銀行活動型網頁前端開發，處理 JavaScript 互動與第三方套件整合</li>
+						<li className="mb-2">配合銀行客戶資安弱掃規範，修正前端程式以避免 XSS、Open Redirect 等風險</li>
+						<li className="mb-2">將第三方套件（Swiper）的初始化與參數設定改寫為可控結構，降低 DOM-based injection 風險</li>
+						<li className="mb-2">協助調整 Content Security Policy（CSP）與前端資源引用方式，確保通過自動化掃描</li>
+						<li className="mb-2">整合 Swiper / 追蹤碼設定 等常用 JavaScript 為客製通用模組，並撰寫使用文件，使設計團隊能在不撰寫 JavaScript 的情況下直接使用互動元件。</li>
 					</ul>
 				</div>
 				<div className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-center border-b-1 py-8 bg-black">
@@ -130,9 +131,9 @@ export default function About() {
 						<p className="text-neon-light">網頁設計師暨數位內容企劃</p>
 					</div>
 					<ul className="list-disc w-[320px] md:w-[350px] px-3 md:px-0 ml-4 sm:ml-0">
-						<li>產品官網設計（Figma、Wordpress）</li>
-						<li>參與 R&D 部門 UX/UI 討論</li>
-						<li>協助產品 UAT</li>
+						<li className="mb-2">產品官網設計（Figma、Wordpress）</li>
+						<li className="mb-2">參與 R&D 部門 UX/UI 討論</li>
+						<li className="mb-2">協助產品 UAT</li>
 					</ul>
 				</div>
 				<div className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-center border-b-1 py-8 bg-black">
@@ -172,21 +173,25 @@ export default function About() {
 				<div className="container" id="background">
 					<h2 className="text-neon text-3xl md:text-4xl font-bold mb-4 text-center px-2">技術與背景</h2>
 					<div className="flex flex-col space-y-2 mb-12">
-						<p className="text-black bg-gray-300 px-2 py-0.5 mb-3 w-fit text-lg font-medium">從設計師身份到前端的轉變</p>
-						<p >過去從影像剪輯、動畫到網頁設計，我不停的探索自己想要的方向。利用時間學習 UIUX、切版、開發 React 專案、串 API、Git 協作等，對於技術的焦慮及對學習的渴望帶領著我，不斷擴大自己的技能樹。</p>
-						<p>工作上，我曾經在軟體新創的行銷部門製作 SASS 產品的形象網站，也協助 RD 部門進行產品 UAT 測試，可以說是我進入相關領域的起點。</p>	
-						<p className="mb-10">在現職中，我將所學的前端技能運用在各類銀行活動頁專案中，包含以 GSAP 製作動態視覺、使用 Lottie.js 放入自行製作的 JSON 動畫，以提升行銷頁的互動與品質。</p>	
-						<p className="mb-10"><span className="text-neon-dark font-medium text-medium block mb-1">金融專案經驗｜資安與弱掃處理</span>由於金融客戶對資安要求嚴格，我也協助處理多項弱掃項目，例如<span className="text-blue-200">修正 XSS、punycode、URL 驗證</span>等問題，並與客戶端溝通 Content Security Policy 的設定需求，確保活動頁能順利過審。在此過程中，我將 Slick、Swiper、GSAP 等常用插件整合為一支可安全嵌入的通用 JS，並撰寫完整使用文件，讓團隊可透過 data attribute 即可初始化元件，降低開發門檻並避免資安誤判。同時也讓整體專案流程更一致、更易於維護。</p>	
-						<p><span className="text-neon-dark font-medium text-medium block mb-1">目標的確立</span>在這個充滿突發任務的路上，我發現比起設計畫面、視覺，在面臨及解決程式碼問題時更能令我獲得成就感，也較能激發我的熱忱，使我對未來的方向更加明確。</p>
-						<p>一直以來都覺得自己有能力做到更多，軟體工程讓我看到「學習」的無限可能，而我希望透過不斷精進技術，讓自己的能力與成就感都能正向循環。</p>
+						<p className="text-black bg-gray-300 px-2 py-0.5 mb-3 w-fit text-lg font-medium">專業定位與實務經驗</p>
+						<p>現職主要負責銀行活動網頁的前端開發，長期參與金融行銷頁專案製作。擅長忠實還原設計稿件，並在設計稿不完整的情況下仍能完整考慮多裝置 RWD 的呈現。視覺呈現也曾使用 GSAP 製作動態視覺效果、使用 Lottie.js 自製 JSON 動畫，優化行銷頁面的視覺與互動體驗。</p>
+						<p><span className="text-neon-light">熟悉 React、JavaScript、Vite 整合專案，並有 Bootstrap 及 Tailwind 實務運用經驗。</span>並在金融客戶高資安要求的環境下協助處理弱點掃描項目與 Content Security Policy 的設定，結合 AI 工具調整程式碼，以符合 OWASP 提出的安全風險建議。</p>	
 					</div>
-					<div className="flex flex-col space-y-2 mb-8">
-						<p className="text-black bg-gray-300 px-2 py-0.5 mb-3 w-fit text-lg font-medium">從自學到實踐</p>
-						<p className="mb-10"><span className="text-neon-dark font-medium text-medium block mb-1">2023 －Vue 銷售後台管理</span>2023 年，我有幸得到了一個參與 Vue 全端專案的機會，協助優化介面的設計及版型，是我第一次接觸前端框架。但也是因為首次接觸，閱讀及理解對我來說是非常大的考驗。下班之餘，我經常研究程式碼到忘記時間的流逝，卻感覺效果不如預期。這一經驗促使我尋找更有系統性的學習路徑，也在協作中習得了<span className="text-blue-200"> Git 的基礎操作、rebase、整理 commit </span>等。</p>	
-						<p className="mb-10"><span className="text-neon-dark font-medium text-medium block mb-1">2024－React 音樂播放器 × Spotify API</span>2024 年，報名了一門教授 React 基礎及製作 Side Project 的課程。5 個月的時間裡，除了學習基礎使用，基於我對音樂的熱愛，我與夥伴選擇了音樂播放器為主題，使用 Spotify API 及 SDK 製作了一個官網及網頁播放器。其複雜度不如預想中單純，卻也讓我接觸了<span className="text-blue-200"> OAUTH 2.0、redux、自定 Hook </span>等擴充知識。</p>	
-						<p><span className="text-neon-dark font-medium text-medium block mb-1">2025－接觸後端</span>因公司主要業務來自於金融業，對於資安有一定的要求標準。其中最基本的就是活動網頁的預覽需要經過加密。隨著資安的要求愈來愈高，我們也多了許多需要人工統計的資料需要交付，這點成為我開發專案預覽系統的契機。</p>
-						<p>在粗略評估可行性後，我向老闆提出使用私人時間製作此系統的想法，除了希望讓公司的工作流程更加順暢，也藉此機會學習<span className="text-blue-200">使用 node.js 建立後端資料、前後端部署、CORS </span>等做純前端專案時比較少接觸到的範疇。</p>
-						<p>過程中我也經歷了一個產品從前期觀察、提出問題、思考解決方案，到開始實際執行的完整過程，在一人專案中發現一個產品開發團隊中每個角色的重要性，也使我對這樣的團隊與環境更加嚮往。</p>
+					<div className="flex flex-col space-y-2 mb-12">
+						<p className="text-black bg-gray-300 px-2 py-0.5 mb-3 w-fit text-lg font-medium">金融專案中的資安與模組化經驗</p>
+						<p>由於金融客戶對資安標準要求嚴格，曾協助修正多項弱掃項目，包括<span className="text-neon-light"> XSS 風險處理、URL 驗證、punycode </span>問題等。由於客戶使用之掃描器原型為 LLM ，推測有加上諸多限制，在掃描程式碼時對於前後邏輯的關係理解較為淺層，因此實際提交內容會包含 Over Engineered 的程式碼，才能順利過掃。從此理解到 Clean Code 與客戶的要求有時會出現矛盾，需要視情況動態調整撰寫的方式。</p>	
+						<p>在過程中，我也將 Swiper、行銷追蹤碼設定、自製 Animate On Scroll 等<span className="text-neon-light">常用插件整合為通用的 JavaScript 模組，透過 data attribute 初始化元件，並撰寫完整使用文件，使設計團隊能在不撰寫 JavaScript 的情況下直接使用互動元件</span>。此做法不僅降低設計團隊的開發門檻，也完全移除 html 中的 script 以消除所有可能的資安疑慮，提升專案的一致性及安全性。</p>	
+					</div>
+					<div className="flex flex-col space-y-2 mb-12">
+						<p className="text-black bg-gray-300 px-2 py-0.5 mb-3 w-fit text-lg font-medium">從前端延伸至系統開發的實踐</p>
+						<p>由於部分客戶要求預覽專案及交付檔案時需加密，並須定期向其提交所有專案連結是否失效等統計表，我觀察到公司存在人工統計及既有預覽系統（ftp）存在流程上的痛點，因此主動提出開發內部用的預覽專案管理系統，以減少人工統計與管理預覽連結的時間成本。</p>	
+						<p>該系統<span className="text-neon-light">以 Node.js 建立後端服務，除了基本的 CRUD，亦存在權限驗證機制，並處理 CORS、環境變數管理</span>等。從需求觀察、架構設計、實作到部署皆由一人完成，完整經歷產品的開發流程，也更加理解團隊中不同角色的分工與價值。</p>
+						<p>此專案使我對系統設計與後端邏輯擁有更宏觀的理解與興趣，希望日後除了持續強化前端技能，也能在後端及系統設計上有更深度的學習。</p>
+					</div>
+					<div className="flex flex-col space-y-2 mb-12">
+						<p className="text-black bg-gray-300 px-2 py-0.5 mb-3 w-fit text-lg font-medium">技術成長與持續學習</p>
+						<p>過去曾參與 Vue 專案的畫面設計改版，<span className="text-neon-light">後續投入 React 框架的技術學習，並完成使用 Spotify API 與 Web Playback SDK 的音樂播放器專案，實際操作 OAuth 2.0 授權流程，Redux 狀態管理與自定義 Hook </span>等功能。</p>	
+						<p>自設計背景出發，使我在開發中更重視畫面細節與使用體驗；而在解決程式問題與優化架構的過程中，逐漸確立以工程能力為核心的職涯方向。未來也計劃繼續學習 TypeScript 以及其他前端框架、了解 React 底層邏輯，及更有效的利用 AI 工具。期望未來能在成熟的工程團隊中持續累積實戰經驗，深化系統設計與前後端整合能力。</p>
 					</div>
 				</div>
 			</section>

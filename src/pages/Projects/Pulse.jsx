@@ -2,6 +2,10 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
 import projectPulse from "@/assets/images/index_project_pulse.jpg";
+import imgOAuth from "@/assets/images/project_pulse_index_oauth.gif";
+import imgPlayerControl from "@/assets/images/project_pulse_player_control.gif";
+import imgOverall from "@/assets/images/project_pulse_overall.jpg";
+import imgMarquee from "@/assets/images/project_pulse_index_marquee.gif";
 export default function Pulse() {
     const [mode, setMode] = useState("Cool");
     const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
@@ -35,7 +39,7 @@ export default function Pulse() {
                         <h1 className="mb-1">PULSE 音樂播放器 ｜<span className="block sm:hidden"></span> Side Project</h1>
                         <p className="text-white text-base font-normal">串接 Spotify API 的 Web Player，從 OAuth 2.0 驗證到播放狀態管理的完整前端實作</p>    
                     </div>
-                    <img src={projectPulse} alt="" className="max-w-[500px] mx-auto mb-10"/>
+                    <img src={projectPulse} alt="" className="max-w-[500px] mx-auto mb-10 w-full"/>
                     <div className="mb-20">
                         <h2 className="text-neon-light text-xl font-semibold mb-2 text-center">專案背景</h2>
                         <p className="mb-4">PULSE 是一個串接 Spotify API 的網頁播放器，支援使用者登入、播放控制、搜尋及查看收藏歌單/藝人功能。我在這個專案中負責前端的切版、整合 API 並應用 Spotify SDK，目標是模擬實際產品的開發流程，深入了解 OAUTH、Redux 狀態管理及播放器 SDK 的運作。並且在與他人合作時，更加熟悉分支整合、解決衝突。</p>
@@ -100,7 +104,7 @@ export default function Pulse() {
                             <div className="mb-4 flex items-baseline">
                                 <span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">解法</span>
                                 <div>
-                                    <p className="mb-2">我將 SDK 初始化與事件監聽邏輯自 UI 元件中抽離，重新設計播放器架構：</p>
+                                    <p className="mb-2">將 SDK 初始化與事件監聽邏輯自 UI 元件中抽離，重新設計播放器架構：</p>
                                     <ul className="mb-2">
                                         <li className="flex items-center gap-2 mb-2">
                                             <div>
@@ -136,6 +140,7 @@ export default function Pulse() {
                                         </li>
                                     </ul>
                                     <p>此重構讓播放器架構更穩定，事件回傳正常，UI 與播放狀態能在跨頁情境下保持同步。</p>
+                                    <div className="relative py-[40px]"><img src={imgPlayerControl} alt="" className="w-full" /></div>
                                 </div>
                             </div>
                         </div>
@@ -187,6 +192,9 @@ export default function Pulse() {
                                             <span>主動處理 redirect 後的 URL 清理與 token 更新時機，確保 API 與播放器穩定運作</span>
                                         </li>
                                     </ul>
+                                    <div className="relative py-[40px]">
+                                        <img src={imgOAuth} alt="" className="w-full"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -234,12 +242,22 @@ export default function Pulse() {
                 <div className="container">
                     <div className="max-w-[740px] mx-auto text-white">
                         <h2 className="text-neon-light text-xl font-semibold mb-4 text-center">回顧</h2>
-                        <p className="mb-4">這個專案可以說是我轉職前端的重要轉捩點。</p>
+                        <p className="mb-4">作為我初次使用 React 框架開發的專案，這個題材讓我對前端的資料串接與狀態管理的理解有非常深刻的影響。</p>
                         <p className="mb-4">在教科書上或各種教學中，API 串接似乎只是選對 URL、設定好 method 就能拿到資料；但實際操作 Spotify API 後，我深刻體會到大型、受限嚴格的 API 會帶來什麼樣的挑戰與學習曲線。</p>
                         <p className="mb-4">Spotify 作為一個安全性高、資料結構複雜的服務平台，從登入驗證、token 交換，到播放器狀態的更新，每一步都需要思考「<b>什麼時候該抓資料、該更新哪個狀態」</b>。</p>
                         <p>這些過程讓我對「狀態一致性」、「API hook 的封裝」、「登入流程中的安全驗證邏輯」有了實戰經驗，也強化了我面對複雜 API 架構設計時的信心與思維方式。</p>
-                    </div> 
+                    </div>
                 </div>       
+            </section>
+            <section className="pb-20">
+                <div className="max-w-[1200px] mx-auto text-white mb-10">
+                    <h2 className="text-neon-light text-xl font-semibold mb-8 text-center">畫面展示</h2>
+                    <p className="py-4 text-center">播放器官網首頁</p>
+                    <img src={imgOverall} alt="首頁一覽"/>
+                </div> 
+                <div className="max-w-[740px] mx-auto text-white">
+                    <img src={imgMarquee} alt="首頁Marquee"/>
+                </div>
             </section>
         <Footer />
     </>
