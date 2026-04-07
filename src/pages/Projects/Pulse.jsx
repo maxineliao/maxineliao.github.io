@@ -52,6 +52,7 @@ export default function Pulse() {
                             <div className="mb-2 flex items-baseline"><span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">動畫</span>GSAP</div>
                             <div className="mb-2 flex items-baseline"><span className="text-black bg-neon font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">後端</span>Spotify API、Spotify SDK</div>
                         </div>
+                        <img src="" alt="" />
                     </div>
                     <div className="mb-20">
                         <h2 className="text-neon-light text-xl font-semibold mb-4 text-center">我的角色與實作內容</h2>
@@ -249,14 +250,14 @@ export default function Pulse() {
                     </div>
                 </div>       
             </section>
-            <section className="pb-20">
-                <div className="max-w-[1200px] mx-auto text-white mb-10">
+            <section className="pb-20 px-2">
+                <div className="max-w-[1200px] mx-auto text-white mb-16">
                     <h2 className="text-neon-light text-xl font-semibold mb-8 text-center">畫面展示</h2>
                     <p className="py-4 text-center">播放器官網首頁</p>
-                    <img src={imgOverall} alt="首頁一覽"/>
+                    <img className="drop-shadow-[-10px_10px_0] drop-shadow-neon-light border-1 border-neon-light" src={imgOverall} alt="首頁一覽"/>
                 </div> 
                 <div className="max-w-[740px] mx-auto text-white">
-                    <img src={imgMarquee} alt="首頁Marquee"/>
+                    <img className="drop-shadow-[-6px_6px_0] drop-shadow-neon-light border-1 border-neon-light" src={imgMarquee} alt="首頁Marquee"/>
                 </div>
             </section>
         <Footer />

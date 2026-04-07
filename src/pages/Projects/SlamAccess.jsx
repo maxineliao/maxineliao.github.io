@@ -11,6 +11,8 @@ import img3_sm from "@/assets/images/project_slam_03_sm.png";
 import imgCreate from "@/assets/images/project_slam_create.gif";
 import imgPreview from "@/assets/images/project_slam_preview.gif";
 import imgDisable from "@/assets/images/project_slam_disable.gif";
+import imgStructure from "@/assets/images/project_slam_structure.jpg";
+import imgStructure_md from "@/assets/images/project_slam_structure_md.jpg";
 
 export default function SlamAccess() {
     const [mode, setMode] = useState("Cool");
@@ -65,6 +67,10 @@ export default function SlamAccess() {
                         <div className="mb-2 flex items-baseline"><span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">前端技術</span>使用 React 負責頁面切換與資料渲染，Tailwind CSS 進行排版與響應式設計</div>
                         <div className="mb-2 flex items-baseline"><span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">後端技術</span>使用 Google Cloud Storage 作為預覽頁靜態部署空間，Firestore 儲存專案資料與到期時間等 metadata。內部管理系統透過 Firebase Authentication ID Token 驗證使用者身分；對外預覽連結則以 cookie-based access control 控制存取，確保未授權使用者無法直接存取預覽內容。</div>
                         <div className="mb-2 flex items-baseline"><span className="text-black bg-neon font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">額外技術</span>使用 Firebase Auth 處理登入狀態、X-Robots-Tag 阻擋搜尋引擎爬蟲等安全性強化手段</div>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset={imgStructure} />
+                        <img src={imgStructure_md} alt="專案架構圖" />
+                        </picture>
                     </div>
                     <div className="mb-20">
                         <h2 className="text-neon-light text-xl font-semibold mb-4 text-center">我的角色與實作內容</h2>
@@ -384,21 +390,45 @@ export default function SlamAccess() {
                             <div className="flex items-baseline">
                                 <span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">解法</span>
                                 <ul>
-                                    <li className="flex items-center gap-2 mb-2">
+                                    {/* <li className="flex items-center gap-2 mb-2">
                                     <div>
                                             <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.48954 0L10.1768 5.0229L15 7.00281L9.05544 8.9771L5.51042 14L4.82315 8.9771L0 7.00281L5.94452 5.0229L9.48954 0Z" fill="#BFFF00"/>
                                             </svg>
                                         </div>
                                         <span>使用 Firestore 撰寫過濾條件，可依「客戶」「狀態」「到期日」快速搜尋（To Do）</span>
-                                    </li>
+                                    </li> */}
                                     <li className="flex items-center gap-2 mb-2">
                                         <div>
                                             <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.48954 0L10.1768 5.0229L15 7.00281L9.05544 8.9771L5.51042 14L4.82315 8.9771L0 7.00281L5.94452 5.0229L9.48954 0Z" fill="#BFFF00"/>
                                             </svg>
                                         </div>
-                                        <span>建立報表功能，可依區間匯出停用專案清單，便於交付連結狀態給重視安全問題的客戶確認，以及後續清檔或下載（To Do）</span>
+                                        <span>建立報表功能，可依區間匯出停用專案清單，便於交付連結狀態給重視安全問題的客戶確認，以及後續清檔或下載</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="border-b-1 border-neon py-8">
+                    <div className="max-w-[740px] mx-auto px-2">
+                        <h3 className="text-center text-white text-lg font-medium mb-2">⑤ 到期自動清除專案資料</h3>
+                        <div>
+                            <div className="mb-2 flex items-baseline">
+                                <span className="text-black bg-white font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">挑戰</span>
+                                <p>過去使用 ftp 提交預覽網頁時，需人工不定期刪除專案資料，避免過時的資料佔用儲存空間。</p>
+                            </div>
+                            <div className="flex items-baseline">
+                                <span className="text-black bg-neon-light font-medium px-2 py-1 rounded-full mr-2 block w-fit mb-2 whitespace-nowrap">解法</span>
+                                <ul>
+                                    <li className="flex items-center gap-2 mb-2">
+                                        <div>
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.48954 0L10.1768 5.0229L15 7.00281L9.05544 8.9771L5.51042 14L4.82315 8.9771L0 7.00281L5.94452 5.0229L9.48954 0Z" fill="#BFFF00"/>
+                                            </svg>
+                                        </div>
+                                        <span>使用 Cloud Scheduler + Cloud Run 定期（每日）查詢 Firestore 過期專案，過期一週即刪除 GCS 以及 Firestore 資料</span>
                                     </li>
                                 </ul>
                             </div>

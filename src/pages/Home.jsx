@@ -133,8 +133,7 @@ export default function Home() {
 						嗨，我是 Maxine，同事都叫我 Max。<br />來自設計背景的我，具備前端開發能力，也擁有視覺敏銳度，正邁向更完整的開發角色。
 						<br />
 						<br />
-						我曾主動開發公司內部的網頁預覽系統，從功能規劃到前後端皆獨立完成——<br />專案使用 React +
-						Tailwind、Express + Firebase + Cloud Run，<br />為銀行客戶打造可加密與限時失效的網頁預覽系統，也涵蓋基本的專案管理功能。
+						我曾主動規劃並開發公司內部的網頁預覽系統，負責從需求分析、系統架構設計到前後端實作與部署。<br />技術採用 React + Tailwind、Express + Firebase + Cloud Run，<br />打造具備密碼保護與到期自動失效機制的安全預覽流程，<br />取代既有 FTP 與人工交付方式，大幅提升專案交付效率與資安控管能力。
 						<br />
 						<br />
 						我也製作過使用 Spotify API 的網頁播放器，<br />透過自製 React Hook 管理播放狀態與 OAUTH 2.0 登入驗證，<br />實際強化 API 串接與元件架構理解。
@@ -296,7 +295,7 @@ export default function Home() {
 								PULSE Web Player
 							</h3>
 							<p>
-								PULSE 是一個串接 Spotify API 的自製網頁播放器，實際操作播放控制、播放器狀態管理及 OAUTH 2.0驗證。
+								串接 Spotify API 的網頁音樂播放器 Side Project。使用 OAuth 2.0（PKCE）登入流程與 Web Playback SDK 播放控制。
 							</p>
 							<Link
 								to="/projects/pulse"
